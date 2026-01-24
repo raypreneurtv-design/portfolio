@@ -48,12 +48,12 @@ export default function Hero() {
             {/* Main content - centered with proper spacing */}
             <div className="flex-1 flex items-center justify-center relative z-10">
                 <div className="max-w-5xl mx-auto px-6 text-center">
-                    {/* Badge */}
+                    {/* Badge - hidden on mobile */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a8ff]/10 border border-[#00a8ff]/20 mb-10"
+                        className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a8ff]/10 border border-[#00a8ff]/20 mb-10"
                     >
                         <span className="text-sm font-semibold text-[#00a8ff] tracking-widest uppercase">
                             AI Transformation Partner
