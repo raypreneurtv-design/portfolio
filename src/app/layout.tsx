@@ -8,12 +8,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ray D. Ndaula | AI Automation Consultant & Full-Stack Developer",
-  description: "Specializing in Claude AI, n8n workflows, and custom automation systems that drive real business results.",
-  keywords: ["AI automation", "Claude AI", "n8n", "workflow automation", "full-stack developer", "Next.js", "Python"],
+  title: "Automate What Matters | InsightOperator",
+  description: "We deploy AI automation systems that replace repetitive work, accelerate your workflows, and multiply your team's output by 10x.",
+  keywords: ["AI automation", "AI receptionist", "lead generation", "AI consulting", "workflow automation", "n8n", "Claude AI"],
   openGraph: {
-    title: "Ray D. Ndaula | AI Automation Consultant",
-    description: "AI-powered automation systems that increase efficiency and revenue.",
+    title: "Automate What Matters | InsightOperator",
+    description: "AI automation systems that replace repetitive work and multiply your team's output by 10x.",
     type: "website",
   },
 };
