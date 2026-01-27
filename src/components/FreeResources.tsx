@@ -72,9 +72,29 @@ export default function FreeResources() {
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
                         Level Up <span className="font-bold">For Free</span>
                     </h2>
-                    <p className="text-xl text-white/50 max-w-2xl mx-auto">
+                    <p className="text-xl text-white/50 max-w-2xl mx-auto mb-10">
                         Join our community and get instant access to guides, templates, and tools we use to build AI systems.
                     </p>
+
+                    {/* Workflow Animation Video */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="max-w-4xl mx-auto"
+                    >
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#00a8ff]/10 border border-white/10">
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-auto"
+                            >
+                                <source src="/level-up-video.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </motion.div>
                 </motion.div>
 
                 {/* Resources Grid */}

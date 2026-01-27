@@ -6,13 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "remotion:studio": "remotion studio src/remotion/index.tsx",
+    "remotion:render": "remotion render src/remotion/index.tsx LevelUpVideo public/level-up-video.mp4",
+    "remotion:render-square": "remotion render src/remotion/index.tsx LevelUpVideoSquare public/level-up-video-square.mp4",
+    "remotion:render-vertical": "remotion render src/remotion/index.tsx LevelUpVideoVertical public/level-up-video-vertical.mp4"
   },
   "dependencies": {
+    "@remotion/cli": "^4.0.410",
+    "@remotion/player": "^4.0.410",
     "framer-motion": "^12.27.1",
     "next": "16.1.3",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "remotion": "^4.0.410"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

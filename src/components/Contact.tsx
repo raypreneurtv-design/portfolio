@@ -169,7 +169,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <label htmlFor="company" className="block text-sm font-semibold text-white mb-2">
-                                            Company
+                                            Company *
                                         </label>
                                         <input
                                             type="text"
@@ -178,6 +178,7 @@ export default function Contact() {
                                             onChange={(e) => setFormState({ ...formState, company: e.target.value })}
                                             className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 text-sm"
                                             placeholder="Your company"
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -199,7 +200,7 @@ export default function Contact() {
 
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-semibold text-white mb-2">
-                                        What are you looking to automate?
+                                        What are you looking to automate? *
                                     </label>
                                     <textarea
                                         id="message"
@@ -208,17 +209,26 @@ export default function Contact() {
                                         rows={4}
                                         className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 resize-none text-sm"
                                         placeholder="Tell us about your business and what you'd like to automate..."
+                                        required
                                     />
                                 </div>
 
-                                <motion.button
-                                    type="submit"
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.98 }}
-                                    className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00a8ff] to-[#6366f1] text-white font-bold text-lg hover:shadow-lg hover:shadow-[#00a8ff]/20 transition-all"
-                                >
-                                    Book Free Strategy Call
-                                </motion.button>
+                                {formState.name && formState.email && formState.company && formState.message ? (
+                                    <motion.a
+                                        href="https://calendly.com/rayndaula/free-discovery-call"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00a8ff] to-[#6366f1] text-white font-bold text-lg hover:shadow-lg hover:shadow-[#00a8ff]/20 transition-all text-center block"
+                                    >
+                                        Book Free Strategy Call
+                                    </motion.a>
+                                ) : (
+                                    <div className="w-full py-4 rounded-xl bg-white/10 text-white/40 font-bold text-lg text-center cursor-not-allowed">
+                                        Fill all fields to continue
+                                    </div>
+                                )}
 
                                 <p className="text-center text-white/30 text-xs">
                                     No spam. We'll respond within 24 hours.
