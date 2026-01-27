@@ -8,21 +8,21 @@ import Link from "next/link";
 // Three main service offerings
 const services = [
     {
-        icon: "⚡",
-        title: "AI Receptionists",
-        description: "24/7 AI-powered call handling. We audit, design, build, and deploy custom voice agents across your entire operation.",
+        icon: "🚀",
+        title: "Transformation",
+        description: "Complete AI infrastructure overhaul. We audit your operations, identify automation opportunities, and transform your business end-to-end.",
         href: "/services/ai-receptionist",
     },
     {
-        icon: "⚡",
-        title: "Lead Generation",
-        description: "Production-grade lead systems—funnels, automations, nurture sequences—that integrate directly into your stack.",
+        icon: "⚙️",
+        title: "Engineering",
+        description: "Custom AI systems built for your stack. Voice agents, chatbots, workflow automations, and integrations—production-ready.",
         href: "/services/lead-generation",
     },
     {
-        icon: "⚡",
+        icon: "🎯",
         title: "AI Consulting",
-        description: "AI training and implementation. Workshops, playbooks, and hands-on sessions to build internal AI capability.",
+        description: "Strategic guidance and hands-on training. Workshops, playbooks, and implementation support to build your AI capability.",
         href: "/services/consultation",
     },
 ];

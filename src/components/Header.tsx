@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navLinks = [
-    { name: "About", href: "#about" },
+    { name: "Demos", href: "#demos" },
+    { name: "Resources", href: "#resources" },
     { name: "Services", href: "#services" },
     { name: "Proof", href: "#proof" },
-    { name: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
                         />
                     </div>
                     <div className="flex flex-col">
-                        <span className={`text-xl font-black tracking-tight transition-colors ${scrolled ? 'text-white' : 'text-black'}`}>
+                        <span className="text-xl font-black tracking-tight transition-colors text-white">
                             Insight<span className="text-[#00a8ff]">Operator</span>
                         </span>
                     </div>
@@ -55,10 +55,7 @@ export default function Header() {
                         <a
                             key={link.name}
                             href={link.href}
-                            className={`text-sm font-semibold transition-colors ${scrolled
-                                ? 'text-white/70 hover:text-[#00a8ff]'
-                                : 'text-black/70 hover:text-[#00a8ff]'
-                                }`}
+                            className="text-sm font-semibold transition-colors text-white/70 hover:text-[#00a8ff]"
                         >
                             {link.name}
                         </a>
@@ -74,9 +71,9 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <button className="md:hidden p-2" aria-label="Menu">
                     <div className="w-6 flex flex-col gap-1.5">
-                        <span className={`w-full h-0.5 transition-colors ${scrolled ? 'bg-white' : 'bg-black'}`} />
-                        <span className={`w-full h-0.5 transition-colors ${scrolled ? 'bg-white' : 'bg-black'}`} />
-                        <span className={`w-4 h-0.5 transition-colors ${scrolled ? 'bg-white' : 'bg-black'}`} />
+                        <span className="w-full h-0.5 transition-colors bg-white" />
+                        <span className="w-full h-0.5 transition-colors bg-white" />
+                        <span className="w-4 h-0.5 transition-colors bg-white" />
                     </div>
                 </button>
             </div>

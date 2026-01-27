@@ -13,14 +13,17 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-background-dark: var(--background-dark);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
+  --color-background: #ffffff;
+  --color-background-dark: #000000;
+  --color-foreground: #000000;
+  --color-accent: #00a8ff;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 html {
@@ -210,11 +213,14 @@ html {
 .marquee-container {
   overflow: hidden;
   width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .marquee-content {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 
 @keyframes marquee {
@@ -223,6 +229,89 @@ html {
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.333%);
+  }
+}
+
+/* Starry night background */
+.starry-night {
+  background: linear-gradient(180deg,
+    #0a0a1a 0%,
+    #0d1b2a 25%,
+    #1b263b 50%,
+    #0d1b2a 75%,
+    #0a0a1a 100%
+  );
+  position: relative;
+}
+
+.starry-night::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 90px 40px, #ffffff, transparent),
+    radial-gradient(2px 2px at 160px 120px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 230px 80px, #ffffff, transparent),
+    radial-gradient(2px 2px at 300px 150px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 370px 50px, #ffffff, transparent),
+    radial-gradient(2px 2px at 450px 180px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 520px 90px, #ffffff, transparent),
+    radial-gradient(2px 2px at 600px 140px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 680px 60px, #ffffff, transparent),
+    radial-gradient(2px 2px at 750px 200px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 820px 110px, #ffffff, transparent),
+    radial-gradient(2px 2px at 900px 170px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 980px 40px, #ffffff, transparent),
+    radial-gradient(2px 2px at 100px 250px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 200px 300px, #ffffff, transparent),
+    radial-gradient(2px 2px at 350px 280px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 500px 320px, #ffffff, transparent),
+    radial-gradient(2px 2px at 650px 260px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 800px 340px, #ffffff, transparent),
+    radial-gradient(2px 2px at 950px 290px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 50px 400px, #ffffff, transparent),
+    radial-gradient(2px 2px at 150px 450px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 280px 380px, #ffffff, transparent),
+    radial-gradient(2px 2px at 420px 430px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 560px 390px, #ffffff, transparent),
+    radial-gradient(2px 2px at 700px 460px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 850px 410px, #ffffff, transparent),
+    radial-gradient(2px 2px at 1000px 380px, rgba(255,255,255,0.6), transparent);
+  background-repeat: repeat;
+  background-size: 1000px 500px;
+  animation: twinkle 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.starry-night::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 60px 100px, rgba(100,180,255,0.9), transparent),
+    radial-gradient(1px 1px at 180px 200px, rgba(100,180,255,0.7), transparent),
+    radial-gradient(1px 1px at 320px 60px, rgba(100,180,255,0.8), transparent),
+    radial-gradient(1px 1px at 480px 240px, rgba(100,180,255,0.6), transparent),
+    radial-gradient(1px 1px at 620px 130px, rgba(100,180,255,0.9), transparent),
+    radial-gradient(1px 1px at 780px 280px, rgba(100,180,255,0.7), transparent),
+    radial-gradient(1px 1px at 920px 180px, rgba(100,180,255,0.8), transparent),
+    radial-gradient(1px 1px at 120px 350px, rgba(100,180,255,0.6), transparent),
+    radial-gradient(1px 1px at 400px 400px, rgba(100,180,255,0.9), transparent),
+    radial-gradient(1px 1px at 700px 370px, rgba(100,180,255,0.7), transparent);
+  background-repeat: repeat;
+  background-size: 1000px 500px;
+  animation: twinkle 6s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
