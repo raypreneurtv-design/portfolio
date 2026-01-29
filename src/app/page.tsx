@@ -13,9 +13,9 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <Header />
       <Hero />
+      <Services />
       <Demos />
       <FreeResources />
-      <Services />
       <Proof />
       <FAQ />
       <Contact />

@@ -75,7 +75,7 @@ export default function Hero() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-lg md:text-xl text-white/60 mb-12 max-w-3xl mx-auto leading-relaxed"
                     >
-                        We deploy AI automation systems that replace repetitive work, accelerate your workflows, and multiply your team's output by 10x.
+                        We audit your business infrastructure and automate what matters. We build systems that replace repetitive work, accelerate your workflows, and multiply your team's output by 10x.
                     </motion.p>
 
                     {/* Single CTA */}
