@@ -74,7 +74,7 @@ export default function SocialProof() {
 
               {/* Problem */}
               <div className="mb-6">
-                <Badge variant="secondary" size="sm" className="mb-3 bg-[#ff4757]/10 text-[#ff6b81] border-[#ff4757]/20">
+                <Badge variant="outline" size="sm" className="mb-3 bg-[#ff4757]/10 text-[#ff6b81] border-[#ff4757]/20">
                   THE PROBLEM
                 </Badge>
                 <h3 className="text-xl font-bold text-white mb-2">{item.problem}</h3>

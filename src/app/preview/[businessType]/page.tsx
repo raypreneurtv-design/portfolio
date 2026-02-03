@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/Button';
@@ -196,14 +197,15 @@ export default async function BusinessPreviewPage({ params }: PageProps) {
                 </div>
               ))}
 
-              <Button
-                variant="cta"
-                size="lg"
-                className="w-full"
-                onClick={() => (window.location.href = '/quote')}
-              >
-                Get This For Your {business.name} Business
-              </Button>
+              <Link href="/quote" className="block">
+                <Button
+                  variant="cta"
+                  size="lg"
+                  className="w-full"
+                >
+                  Get This For Your {business.name} Business
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -222,12 +224,16 @@ export default async function BusinessPreviewPage({ params }: PageProps) {
               Join other {business.name.toLowerCase()} companies using InsightOperator to capture more leads and book more jobs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button variant="cta" size="lg" onClick={() => (window.location.href = '/quote')}>
-                Get Your Free Quote
-              </Button>
-              <Button variant="secondary" size="lg" onClick={() => (window.location.href = '/demo')}>
-                Try AI Demo
-              </Button>
+              <Link href="/quote">
+                <Button variant="cta" size="lg">
+                  Get Your Free Quote
+                </Button>
+              </Link>
+              <Link href="/demo">
+                <Button variant="secondary" size="lg">
+                  Try AI Demo
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
