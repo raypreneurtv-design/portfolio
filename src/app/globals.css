@@ -322,3 +322,54 @@ html {
     opacity: 1;
   }
 }
+
+/* CTA Button (Green) */
+.btn-cta {
+  background: #00ff87;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0, 255, 135, 0.3);
+}
+
+.btn-cta:hover {
+  background: #00e077;
+  box-shadow: 0 6px 30px rgba(0, 255, 135, 0.5);
+}
+
+/* Form focus states */
+.form-input:focus {
+  border-color: rgba(0, 168, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba(0, 168, 255, 0.1);
+}
+
+/* Pulse animation for live indicators */
+.pulse-green {
+  animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-green {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Gradient text for CTA accent */
+.text-gradient-cta {
+  background: linear-gradient(135deg, #00ff87 0%, #00a8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card hover lift effect */
+.card-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 168, 255, 0.15);
+}

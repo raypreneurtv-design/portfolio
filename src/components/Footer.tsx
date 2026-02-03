@@ -4,12 +4,21 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const footerLinks = [
-    { name: "Demos", href: "#demos" },
-    { name: "Resources", href: "#resources" },
-    { name: "Services", href: "#services" },
-    { name: "Proof", href: "#proof" },
+    { name: "Features", href: "#features" },
+    { name: "How It Works", href: "#how-it-works" },
+    { name: "Results", href: "#proof" },
     { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    { name: "Get Quote", href: "/quote" },
+    { name: "AI Demo", href: "/demo" },
+];
+
+const businessTypeLinks = [
+    { name: "HVAC", href: "/preview/hvac" },
+    { name: "Plumbing", href: "/preview/plumbing" },
+    { name: "Roofing", href: "/preview/roofing" },
+    { name: "Landscaping", href: "/preview/landscaping" },
+    { name: "Electrical", href: "/preview/electrical" },
+    { name: "Cleaning", href: "/preview/cleaning" },
 ];
 
 export default function Footer() {
@@ -43,7 +52,7 @@ export default function Footer() {
                             </div>
                         </motion.div>
                         <p className="text-white/40 text-sm mb-4 max-w-xs">
-                            AI automation systems that replace repetitive work and multiply your team's output.
+                            AI-powered lead generation tools built for home service businesses. Instant quotes, 24/7 receptionist, smart chat.
                         </p>
                         <p className="text-xs text-white/20">
                             Building AI since Feb 2024
@@ -66,12 +75,21 @@ export default function Footer() {
                         </nav>
                     </div>
 
-                    {/* Community */}
+                    {/* Industries */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">Join the Community</h4>
-                        <p className="text-white/40 text-sm mb-4">
-                            500+ AI builders sharing knowledge, templates, and support.
-                        </p>
+                        <h4 className="text-white font-semibold mb-4">Industries We Serve</h4>
+                        <nav className="grid grid-cols-2 gap-2 mb-4">
+                            {businessTypeLinks.map((link) => (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-sm text-white/50 hover:text-[#00a8ff] transition-colors"
+                                >
+                                    {link.name}
+                                </a>
+                            ))}
+                        </nav>
+                        <h4 className="text-white font-semibold mb-4 mt-6">Connect With Us</h4>
                         <div className="flex gap-3">
                             <a
                                 href="https://discord.gg/Uag5CdJUwN"

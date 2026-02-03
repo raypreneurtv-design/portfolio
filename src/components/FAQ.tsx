@@ -3,41 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-
-const faqs = [
-    {
-        question: "How quickly can you build an AI automation for my business?",
-        answer: "Most projects go live within 2-4 weeks. Simple chatbots can be deployed in days, while complex multi-agent workflows take longer. We'll give you a clear timeline during our discovery call.",
-    },
-    {
-        question: "Do I need technical knowledge to use these systems?",
-        answer: "Not at all. We build everything with user-friendly interfaces. You'll get a dashboard to monitor performance, but the AI runs autonomously. We also provide training and ongoing support.",
-    },
-    {
-        question: "What's the ROI on AI automation?",
-        answer: "Our clients typically see 10-30 hours saved per week and 50-80% reduction in response times. For lead generation, we've seen 2-5x improvements in conversion rates. We'll help you calculate projected ROI during our consultation.",
-    },
-    {
-        question: "Can the AI handle complex conversations?",
-        answer: "Yes. We use Claude and other advanced LLMs that can understand context, handle objections, and have natural conversations. They can be trained on your specific products, services, and brand voice.",
-    },
-    {
-        question: "What if the AI makes a mistake or can't help?",
-        answer: "We build in smart escalation paths. When the AI is uncertain or the situation requires human touch, it seamlessly hands off to your team with full context. You're always in control.",
-    },
-    {
-        question: "Is my data secure?",
-        answer: "Absolutely. We follow enterprise security practices, use encrypted connections, and never train public models on your data. We can work within your existing compliance requirements (HIPAA, SOC2, etc).",
-    },
-    {
-        question: "What's included in the free community?",
-        answer: "Everything! Access to our resource library, weekly live workshops, direct Q&A with our team, networking with 500+ AI builders, and early access to new tools and templates. No credit card required.",
-    },
-    {
-        question: "How is this different from other AI agencies?",
-        answer: "We're builders first, not just consultants. We use these exact systems in our own business. Plus, our community gives you ongoing value and support—not just a one-time deliverable.",
-    },
-];
+import { faqs } from "@/lib/constants/faq";
 
 function FAQItem({ faq, index, isOpen, onToggle }: {
     faq: typeof faqs[0];

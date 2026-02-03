@@ -1,25 +1,24 @@
 {
-  "name": "website",
+  "name": "insightoperator-landing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "remotion:studio": "remotion studio src/remotion/index.tsx",
-    "remotion:render": "remotion render src/remotion/index.tsx LevelUpVideo public/level-up-video.mp4",
-    "remotion:render-square": "remotion render src/remotion/index.tsx LevelUpVideoSquare public/level-up-video-square.mp4",
-    "remotion:render-vertical": "remotion render src/remotion/index.tsx LevelUpVideoVertical public/level-up-video-vertical.mp4"
+    "lint": "eslint"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.410",
-    "@remotion/player": "^4.0.410",
+    "@heroicons/react": "^2.1.1",
+    "@hookform/resolvers": "^3.3.4",
     "framer-motion": "^12.27.1",
     "next": "16.1.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "^4.0.410"
+    "react-hook-form": "^7.49.3",
+    "react-player": "^2.14.1",
+    "sonner": "^1.3.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

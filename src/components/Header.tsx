@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navLinks = [
-    { name: "Demos", href: "#demos" },
-    { name: "Resources", href: "#resources" },
-    { name: "Services", href: "#services" },
-    { name: "Proof", href: "#proof" },
+    { name: "Features", href: "#features" },
+    { name: "How It Works", href: "#how-it-works" },
+    { name: "Results", href: "#proof" },
+    { name: "FAQ", href: "#faq" },
 ];
 
 export default function Header() {
@@ -61,10 +61,10 @@ export default function Header() {
                         </a>
                     ))}
                     <a
-                        href="#contact"
-                        className="btn-accent px-6 py-2.5 rounded-full text-sm font-bold transition-transform hover:scale-105"
+                        href="/quote"
+                        className="px-6 py-2.5 rounded-full text-sm font-bold transition-transform hover:scale-105 bg-[#00ff87] text-black hover:bg-[#00e077]"
                     >
-                        Let's Talk
+                        Get Free Quote
                     </a>
                 </nav>
 
