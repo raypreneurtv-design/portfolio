@@ -2,11 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
-import { Badge, TrustBadge } from '@/components/ui/Badge';
+import { TrustBadge } from '@/components/ui/Badge';
 import { VideoPlayer } from '@/components/ui/VideoPlayer';
 
 const trustIndicators = [
-  { icon: '🏢', text: '50+ Businesses', subtext: 'Trust InsightOperator' },
   { icon: '📈', text: '3x More Leads', subtext: 'Average Increase' },
   { icon: '✓', text: '30-Day Guarantee', subtext: 'Risk Free' },
 ];
@@ -24,25 +23,15 @@ export default function Hero() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left side - Copy */}
             <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <Badge variant="primary" size="lg" className="mb-6">
-                  AI-Powered Lead Generation
-                </Badge>
-              </motion.div>
-
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.1 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] mb-6 text-white tracking-tight"
               >
-                Turn Website Visitors Into{' '}
-                <span className="text-shimmer font-semibold">Booked Jobs</span>{' '}
-                in 60 Seconds
+                We Automate{' '}
+                <span className="text-shimmer font-semibold">90% of Your Manual Work</span>{' '}
+                in 7 Days
               </motion.h1>
 
               <motion.p
@@ -51,7 +40,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-lg md:text-xl text-white/60 mb-8 leading-relaxed"
               >
-                Instant quotes, 24/7 AI receptionist, and smart chat systems built specifically for home service businesses. Never miss another lead.
+                Instant quotes, a 24/7 AI receptionist, and smart chat systems that respond to leads immediately, book jobs automatically, and handle customer inquiries so your business never misses a call or an opportunity.
               </motion.p>
 
               {/* CTAs */}

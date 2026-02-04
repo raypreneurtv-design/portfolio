@@ -5,6 +5,7 @@ import {
   Hero,
   Features,
   HowItWorks,
+  AboutMe,
   BusinessPreview,
   SocialProof,
   FinalCTA,
@@ -15,8 +16,9 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <Header />
       <Hero />
-      <Features />
       <HowItWorks />
+      <Features />
+      <AboutMe />
       <BusinessPreview />
       <SocialProof />
       <FAQ />

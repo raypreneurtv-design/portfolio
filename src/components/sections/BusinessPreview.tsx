@@ -139,7 +139,7 @@ export default function BusinessPreview() {
               </div>
 
               {/* Website preview */}
-              <div className="p-6 space-y-6 min-h-[400px]" style={{ backgroundColor: selectedBusiness?.color + '10' }}>
+              <div className="p-6 space-y-6 min-h-[400px] pb-24" style={{ backgroundColor: selectedBusiness?.color + '10' }}>
                 {/* Header */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
@@ -169,14 +169,15 @@ export default function BusinessPreview() {
                     Get Instant Quote
                   </button>
                 </div>
+              </div>
 
-                {/* Chat widget preview */}
-                <motion.div
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                  className="absolute bottom-4 right-4 w-72"
-                >
+              {/* Chat widget preview - positioned outside the content area */}
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="absolute bottom-12 right-4 w-72 z-20"
+              >
                   <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                     <div
                       className="px-4 py-3 flex items-center gap-3"
@@ -217,7 +218,6 @@ export default function BusinessPreview() {
                     </div>
                   </div>
                 </motion.div>
-              </div>
             </div>
 
             {/* Floating badge */}
