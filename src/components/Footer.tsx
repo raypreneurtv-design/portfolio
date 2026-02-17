@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const footerLinks = [
-    { name: "Features", href: "#features" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Results", href: "#proof" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Features", href: "/#features" },
+    { name: "How It Works", href: "/#how-it-works" },
+    { name: "Results", href: "/#proof" },
+    { name: "FAQ", href: "/#faq" },
     { name: "Get Quote", href: "/quote" },
     { name: "AI Demo", href: "/demo" },
 ];

@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navLinks = [
-    { name: "Features", href: "#features" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Results", href: "#proof" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Features", href: "/#features" },
+    { name: "How It Works", href: "/#how-it-works" },
+    { name: "Results", href: "/#proof" },
+    { name: "FAQ", href: "/#faq" },
 ];
 
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="flex items-center gap-3 group">
+                <a href="/" className="flex items-center gap-3 group">
                     <div className="relative w-12 h-12">
                         <Image
                             src="/logo-new.png"
