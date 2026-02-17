@@ -164,7 +164,7 @@ export default function Features() {
         >
           <p className="text-white/50 mb-4">Not sure which tools you need?</p>
           <a
-            href="#quote-form"
+            href="/quote"
             className="inline-flex items-center gap-2 text-[#00a8ff] font-semibold hover:underline"
           >
             Get a free recommendation based on your business

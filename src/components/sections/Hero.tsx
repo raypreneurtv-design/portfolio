@@ -58,7 +58,7 @@ export default function Hero() {
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   }
-                  onClick={() => document.getElementById('quote-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => window.location.href = '/quote'}
                 >
                   Get Instant Quote
                 </Button>

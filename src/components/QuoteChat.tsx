@@ -433,7 +433,7 @@ export default function QuoteChat() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
                     onClick={() => handleSelect(opt)}
-                    className="px-4 py-2.5 rounded-xl text-sm font-medium bg-white/5 border border-white/10 text-white/80 hover:bg-[#00a8ff]/20 hover:border-[#00a8ff]/40 hover:text-white transition-all"
+                    className="px-4 py-2.5 rounded-xl text-sm font-medium bg-white/5 border border-white/10 text-white/80 hover:bg-white/20 hover:border-white/30 hover:text-white active:bg-white/25 transition-all cursor-pointer"
                   >
                     {opt.label}
                   </motion.button>

@@ -12,8 +12,8 @@ export const features: Feature[] = [
       'Instant email delivery',
       'CRM integration ready',
     ],
-    ctaText: 'See Quote Demo',
-    ctaLink: '#quote-demo',
+    ctaText: 'Try Instant Quote',
+    ctaLink: '/quote',
   },
   {
     id: 'ai-receptionist',
