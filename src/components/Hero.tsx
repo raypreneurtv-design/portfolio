@@ -67,9 +67,8 @@ export default function Hero() {
                         transition={{ duration: 0.7, delay: 0.1 }}
                         className="text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] mb-8 text-black tracking-tight"
                     >
-                        See What Others Miss{" "}
-                        <br />
-                        <span className="text-shimmer font-light">Automate What Matters</span>
+                        We Automate 90% of <br />
+                        <span className="text-shimmer font-light">Your Manual Work in 7 Days</span>
                     </motion.h1>
 
                     {/* Subheadline */}
@@ -79,7 +78,7 @@ export default function Hero() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-lg md:text-xl text-black/60 mb-12 max-w-3xl mx-auto leading-relaxed"
                     >
-                        We deploy AI automation systems that replace repetitive work, accelerate your workflows, and multiply your team's output by 10x.
+                        Instant quotes, a 24/7 AI receptionist, and smart chat systems that respond to leads immediately, book jobs automatically, and handle customer inquiries so your business never misses a call or an opportunity.
                     </motion.p>
 
                     {/* Single CTA */}
@@ -94,7 +93,7 @@ export default function Hero() {
                             whileTap={{ scale: 0.95 }}
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg border-2 border-black/20 text-black hover:border-[#00a8ff] hover:text-[#00a8ff] transition-all bg-white shadow-lg hover:shadow-xl"
                         >
-                            Get started
+                            Get Free Quote
                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M7 17L17 7M17 7H7M17 7V17" />
                             </svg>

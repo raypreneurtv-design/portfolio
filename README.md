@@ -20,6 +20,32 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## HVAC Quote Generator (`/quote`)
+
+The `/quote` page provides an AI-powered instant quote generator for HVAC services.
+
+### Setup
+
+Create a `.env.local` file in the `website/` directory:
+
+```bash
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+```
+
+Get your API key from [console.anthropic.com](https://console.anthropic.com/).
+
+### How it works
+
+1. User visits `/quote` and chats with an AI assistant
+2. The assistant asks qualifying questions about HVAC needs
+3. Once enough info is gathered, it generates an itemized quote
+4. User enters email to download a PDF of the quote
+
+### API Routes
+
+- `POST /api/quote/chat` - Conversational AI via Claude API
+- `POST /api/quote/pdf` - PDF generation with jsPDF
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

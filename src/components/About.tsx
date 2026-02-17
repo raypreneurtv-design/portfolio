@@ -34,11 +34,11 @@ export default function About() {
                     {/* Section header */}
                     <div className="text-center mb-20">
                         <p className="text-[#00a8ff] font-bold mb-4 tracking-widest uppercase text-sm">
-                            The Operators
+                            The Team
                         </p>
                         <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-                            We Built Systems.<br />
-                            <span className="text-[#00a8ff]">They Worked.</span>
+                            Built By Someone Who's<br />
+                            <span className="text-[#00a8ff]">Actually Done It</span>
                         </h2>
                     </div>
 
