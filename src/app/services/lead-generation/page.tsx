@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function LeadGenerationPage() {
+export default function EngineeringPage() {
     return (
         <main className="min-h-screen bg-black text-white">
             {/* Hero Section */}
@@ -24,15 +24,15 @@ export default function LeadGenerationPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <span className="text-6xl mb-6 block">📈</span>
+                        <span className="text-6xl mb-6 block">⚙️</span>
                         <h1 className="text-5xl md:text-6xl font-light mb-6">
-                            Lead Generation
+                            Custom Engineering
                         </h1>
                         <p className="text-xl text-[#00a8ff] font-semibold mb-4">
-                            Tactics that actually convert
+                            Production-ready AI systems for your stack
                         </p>
                         <p className="text-xl text-white/60 max-w-3xl leading-relaxed">
-                            Proven strategies we've used to grow audiences and capture high-quality leads that turn into paying customers.
+                            Custom AI systems built for your stack. Voice agents, chatbots, workflow automations, and integrations—all production-ready and tailored to your specific requirements.
                         </p>
                     </motion.div>
                 </div>
@@ -54,10 +54,10 @@ export default function LeadGenerationPage() {
                     <h2 className="text-3xl font-bold mb-12 text-center">What You Get</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: "Lead Magnets That Work", desc: "Create valuable resources that people actually want to download" },
-                            { title: "Value Positioning", desc: "Messaging that cuts through the noise and resonates with your ideal customer" },
-                            { title: "Marketing Automation", desc: "Nurture sequences that convert leads into sales on autopilot" },
-                            { title: "YouTube & TikTok Growth", desc: "Platform-specific strategies to grow your audience organically" },
+                            { title: "Voice Agents", desc: "AI-powered voice systems that handle inbound & outbound calls 24/7 with human-like conversation" },
+                            { title: "Chat Agents", desc: "Intelligent web & WhatsApp bots that qualify leads, answer questions, and book appointments" },
+                            { title: "Workflow Automations", desc: "Custom n8n workflows that connect your tools and automate repetitive backend processes" },
+                            { title: "System Integrations", desc: "Seamless connections between your CRM, communication tools, and AI systems" },
                         ].map((feature, i) => (
                             <motion.div
                                 key={feature.title}
@@ -77,8 +77,8 @@ export default function LeadGenerationPage() {
             {/* CTA */}
             <section className="py-20 text-center">
                 <div className="max-w-3xl mx-auto px-6">
-                    <h2 className="text-3xl font-bold mb-4">Ready to Generate More Leads?</h2>
-                    <p className="text-white/60 mb-8">Let's build a lead generation system that works for your business.</p>
+                    <h2 className="text-3xl font-bold mb-4">Ready to Build Custom AI Systems?</h2>
+                    <p className="text-white/60 mb-8">Let's engineer the AI solutions your business needs to scale.</p>
                     <Link
                         href="/#contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-[#00a8ff] text-white hover:bg-[#0077cc] transition-colors"

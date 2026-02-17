@@ -1,22 +1,28 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import HowItWorks from "@/components/HowItWorks";
-import Services from "@/components/Services";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
+import {
+  Hero,
+  Features,
+  HowItWorks,
+  AboutMe,
+  BusinessPreview,
+  SocialProof,
+  FinalCTA,
+} from "@/components/sections";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
       <Hero />
-      <Problem />
       <HowItWorks />
-      <Services />
-      <About />
-      <Contact />
+      <Features />
+      <AboutMe />
+      <BusinessPreview />
+      <SocialProof />
+      <FAQ />
+      <FinalCTA />
       <Footer />
     </main>
   );

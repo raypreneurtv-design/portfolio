@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function AIReceptionistPage() {
+export default function TransformationPage() {
     return (
         <main className="min-h-screen bg-black text-white">
             {/* Hero Section */}
@@ -24,15 +24,15 @@ export default function AIReceptionistPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <span className="text-6xl mb-6 block">📞</span>
+                        <span className="text-6xl mb-6 block">🚀</span>
                         <h1 className="text-5xl md:text-6xl font-light mb-6">
-                            AI Receptionists
+                            Implementation Plan
                         </h1>
                         <p className="text-xl text-[#00a8ff] font-semibold mb-4">
-                            Your business runs while you sleep
+                            See how we add on to your business infrastructure
                         </p>
                         <p className="text-xl text-white/60 max-w-3xl leading-relaxed">
-                            24/7 AI-powered call handling that never misses a lead. Instant capture, automated invoicing, seamless handoff to your team.
+                            Complete AI infrastructure overhaul. We audit your operations, identify automation opportunities, and transform your business end-to-end with a customized implementation roadmap.
                         </p>
                     </motion.div>
                 </div>
@@ -54,10 +54,10 @@ export default function AIReceptionistPage() {
                     <h2 className="text-3xl font-bold mb-12 text-center">What You Get</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: "24/7 Call Coverage", desc: "Never miss an opportunity—your AI receptionist handles calls around the clock" },
-                            { title: "Instant Lead Capture", desc: "Every caller's details captured and synced directly to your CRM" },
-                            { title: "Automated Invoicing", desc: "Generate and send invoices automatically based on call outcomes" },
-                            { title: "Custom Voice & Personality", desc: "Tailored to match your brand's tone and style" },
+                            { title: "Infrastructure Audit", desc: "Deep dive into your current tech stack, processes, and pain points to identify high-impact opportunities" },
+                            { title: "Custom Implementation Roadmap", desc: "Step-by-step plan tailored to your business goals, timelines, and budget" },
+                            { title: "End-to-End Transformation", desc: "From discovery to deployment—we handle the entire AI integration process" },
+                            { title: "Ongoing Optimization", desc: "Continuous monitoring and improvements to maximize ROI as your business evolves" },
                         ].map((feature, i) => (
                             <motion.div
                                 key={feature.title}
@@ -77,8 +77,8 @@ export default function AIReceptionistPage() {
             {/* CTA */}
             <section className="py-20 text-center">
                 <div className="max-w-3xl mx-auto px-6">
-                    <h2 className="text-3xl font-bold mb-4">Ready to Automate Your Calls?</h2>
-                    <p className="text-white/60 mb-8">Let's discuss how an AI receptionist can transform your business.</p>
+                    <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+                    <p className="text-white/60 mb-8">Let's audit your operations and build an implementation plan that delivers results.</p>
                     <Link
                         href="/#contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-[#00a8ff] text-white hover:bg-[#0077cc] transition-colors"

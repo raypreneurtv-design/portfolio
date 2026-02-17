@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ConsultationPage() {
+export default function ConsultingPage() {
     return (
         <main className="min-h-screen bg-black text-white">
             {/* Hero Section */}
@@ -24,15 +24,15 @@ export default function ConsultationPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <span className="text-6xl mb-6 block">🤖</span>
+                        <span className="text-6xl mb-6 block">🎯</span>
                         <h1 className="text-5xl md:text-6xl font-light mb-6">
                             AI Consulting
                         </h1>
                         <p className="text-xl text-[#00a8ff] font-semibold mb-4">
-                            Hands-on implementation
+                            Strategic guidance and hands-on training
                         </p>
                         <p className="text-xl text-white/60 max-w-3xl leading-relaxed">
-                            We don't just advise—we build. Custom Claude AI integrations and n8n automations tailored to your specific business needs.
+                            Strategic guidance and hands-on training. Workshops, playbooks, and implementation support to build your team's AI capability and drive lasting change.
                         </p>
                     </motion.div>
                 </div>
@@ -54,10 +54,10 @@ export default function ConsultationPage() {
                     <h2 className="text-3xl font-bold mb-12 text-center">What You Get</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: "Claude AI Integration", desc: "Custom prompt engineering and API integrations for your specific use cases" },
-                            { title: "n8n Workflow Development", desc: "Powerful automation workflows that connect your tools and processes" },
-                            { title: "Full-Stack Solutions", desc: "End-to-end automation systems built with modern technologies" },
-                            { title: "Ongoing Support", desc: "Continuous optimization and support to keep your systems running smoothly" },
+                            { title: "AI Strategy Workshops", desc: "Interactive sessions to identify AI opportunities and build a strategic roadmap for your organization" },
+                            { title: "Implementation Playbooks", desc: "Step-by-step guides and templates your team can follow to deploy AI solutions independently" },
+                            { title: "Hands-On Training", desc: "Practical training sessions to upskill your team on AI tools, prompting, and automation" },
+                            { title: "Ongoing Advisory", desc: "Continuous strategic support as you scale AI across your organization" },
                         ].map((feature, i) => (
                             <motion.div
                                 key={feature.title}
@@ -77,8 +77,8 @@ export default function ConsultationPage() {
             {/* CTA */}
             <section className="py-20 text-center">
                 <div className="max-w-3xl mx-auto px-6">
-                    <h2 className="text-3xl font-bold mb-4">Ready to Build Custom AI Solutions?</h2>
-                    <p className="text-white/60 mb-8">Let's discuss how we can automate and optimize your business processes.</p>
+                    <h2 className="text-3xl font-bold mb-4">Ready for Strategic AI Guidance?</h2>
+                    <p className="text-white/60 mb-8">Let's build your team's AI capability with expert consulting and training.</p>
                     <Link
                         href="/#contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-[#00a8ff] text-white hover:bg-[#0077cc] transition-colors"

@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Proof", href: "#proof" },
-    { name: "Contact", href: "#contact" },
+    { name: "Features", href: "#features" },
+    { name: "How It Works", href: "#how-it-works" },
+    { name: "Results", href: "#proof" },
+    { name: "FAQ", href: "#faq" },
 ];
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
                         />
                     </div>
                     <div className="flex flex-col">
-                        <span className={`text-xl font-black tracking-tight transition-colors ${scrolled ? 'text-white' : 'text-black'}`}>
+                        <span className="text-xl font-black tracking-tight transition-colors text-white">
                             Insight<span className="text-[#00a8ff]">Operator</span>
                         </span>
                     </div>
@@ -55,28 +55,25 @@ export default function Header() {
                         <a
                             key={link.name}
                             href={link.href}
-                            className={`text-sm font-semibold transition-colors ${scrolled
-                                ? 'text-white/70 hover:text-[#00a8ff]'
-                                : 'text-black/70 hover:text-[#00a8ff]'
-                                }`}
+                            className="text-sm font-semibold transition-colors text-white/70 hover:text-[#00a8ff]"
                         >
                             {link.name}
                         </a>
                     ))}
                     <a
-                        href="#contact"
-                        className="btn-accent px-6 py-2.5 rounded-full text-sm font-bold transition-transform hover:scale-105"
+                        href="/quote"
+                        className="px-6 py-2.5 rounded-full text-sm font-bold transition-transform hover:scale-105 bg-[#00ff87] text-black hover:bg-[#00e077]"
                     >
-                        Let's Talk
+                        Get Free Quote
                     </a>
                 </nav>
 
                 {/* Mobile Menu Button */}
                 <button className="md:hidden p-2" aria-label="Menu">
                     <div className="w-6 flex flex-col gap-1.5">
-                        <span className={`w-full h-0.5 transition-colors ${scrolled ? 'bg-white' : 'bg-black'}`} />
-                        <span className={`w-full h-0.5 transition-colors ${scrolled ? 'bg-white' : 'bg-black'}`} />
-                        <span className={`w-4 h-0.5 transition-colors ${scrolled ? 'bg-white' : 'bg-black'}`} />
+                        <span className="w-full h-0.5 transition-colors bg-white" />
+                        <span className="w-full h-0.5 transition-colors bg-white" />
+                        <span className="w-4 h-0.5 transition-colors bg-white" />
                     </div>
                 </button>
             </div>
