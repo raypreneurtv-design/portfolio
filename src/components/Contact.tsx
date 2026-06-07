@@ -33,7 +33,7 @@ export default function Contact() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#001020] via-black to-black" />
 
             {/* Decorative elements */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#ffffff] opacity-[0.05] blur-[120px] rounded-full" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-white/10 opacity-[0.05] blur-[120px] rounded-full" />
             <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-[#6366f1] opacity-[0.03] blur-[100px] rounded-full" />
 
             <div className="relative z-10 max-w-6xl mx-auto px-6" ref={ref}>
@@ -111,7 +111,7 @@ export default function Contact() {
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 transition-colors text-sm"
                                 >
-                                    <span className="w-5 h-5 rounded bg-[#ffffff] text-white text-xs font-bold flex items-center justify-center">sk</span>
+                                    <span className="w-5 h-5 rounded bg-white/10 text-white text-xs font-bold flex items-center justify-center">sk</span>
                                     Join Skool
                                 </a>
                             </div>

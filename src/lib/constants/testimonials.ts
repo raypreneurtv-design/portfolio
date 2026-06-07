@@ -31,8 +31,8 @@ export const problemSolutions: ProblemSolution[] = [
 ];
 
 export const metrics = [
-  { value: "200+", label: "Quotes Generated Daily" },
-  { value: "95%", label: "Call Answer Rate" },
-  { value: "40%", label: "Avg. Conversion Increase" },
-  { value: "50+", label: "Happy Businesses" },
+  { value: "24/7", label: "Always answering" },
+  { value: "<60s", label: "To an instant quote" },
+  { value: "7 days", label: "From signup to live" },
+  { value: "0", label: "Calls missed" },
 ];

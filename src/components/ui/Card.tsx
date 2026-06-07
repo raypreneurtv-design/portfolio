@@ -17,7 +17,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
       default: 'bg-white/5 border border-white/10',
       glass: 'bg-white/5 backdrop-blur-xl border border-white/10',
       gradient: 'bg-gradient-to-br from-[#ffffff]/10 to-[#6366f1]/10 border border-[#ffffff]/20',
-      interactive: 'bg-white/5 border border-white/10 hover:border-[#ffffff]/40 hover:bg-[#ffffff]/5',
+      interactive: 'bg-white/5 border border-white/10 hover:border-[#ffffff]/40 hover:bg-white/10/5',
     };
 
     const paddings = {

@@ -25,7 +25,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="io-h1"
         >
-          We automate 90% of your manual work in 7 days
+          Turn missed calls into booked jobs
         </motion.h1>
 
         <motion.p
@@ -34,8 +34,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="io-sub"
         >
-          A 24/7 AI receptionist, instant quotes, and smart chat that answer every lead,
-          book the job, and text you the details, so you never miss a call again.
+          An AI receptionist that answers every call, qualifies the lead, and books the job,
+          24/7, so you never lose work to a missed call again.
         </motion.p>
 
         <motion.div

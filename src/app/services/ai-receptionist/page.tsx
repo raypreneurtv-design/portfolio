@@ -9,7 +9,7 @@ export default function TransformationPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#001020] via-black to-black" />
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full" />
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/10 opacity-[0.08] blur-[150px] rounded-full" />
 
                 <div className="relative z-10 max-w-5xl mx-auto px-6">
                     <Link href="/" className="inline-flex items-center gap-2 text-[#ffffff] mb-8 hover:underline">
@@ -81,7 +81,7 @@ export default function TransformationPage() {
                     <p className="text-white/60 mb-8">Let's audit your operations and build an implementation plan that delivers results.</p>
                     <Link
                         href="/#contact"
-                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-[#ffffff] text-white hover:bg-[#e7e7ea] transition-colors"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-white/10 text-white hover:bg-white/15 transition-colors"
                     >
                         Get Started
                         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

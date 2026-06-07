@@ -174,7 +174,7 @@ export default function HowItWorks() {
                     <span className="text-6xl font-bold text-white/10 group-hover:text-[#ffffff]/20 transition-colors">
                       {step.num}
                     </span>
-                    <div className="w-14 h-14 rounded-xl bg-[#ffffff]/20 flex items-center justify-center text-[#ffffff] group-hover:bg-[#ffffff] group-hover:text-white transition-all">
+                    <div className="w-14 h-14 rounded-xl bg-[#ffffff]/20 flex items-center justify-center text-[#ffffff] group-hover:bg-white/10 group-hover:text-white transition-all">
                       {step.icon}
                     </div>
                   </div>
@@ -194,7 +194,7 @@ export default function HowItWorks() {
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.2 + 0.3 }}
-                      className="w-12 h-12 rounded-full bg-[#ffffff] flex items-center justify-center"
+                      className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"
                     >
                       <svg
                         className="w-6 h-6 text-white"
@@ -223,12 +223,12 @@ export default function HowItWorks() {
         >
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[#ffffff]/10 to-[#ffffff]/10 border border-[#ffffff]/20">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-[#ffffff] animate-pulse" />
+              <div className="w-3 h-3 rounded-full bg-white/10 animate-pulse" />
               <span className="text-white font-semibold">Most businesses go live within 1-2 weeks</span>
             </div>
             <a
               href="/quote"
-              className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-[#e7e7ea] transition-colors"
+              className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-white/15 transition-colors"
             >
               Get Started Free
             </a>

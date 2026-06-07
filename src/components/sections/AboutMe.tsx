@@ -124,7 +124,7 @@ export default function AboutMe() {
                 transition={{ delay: 0.3 }}
                 className="text-2xl font-bold text-white mb-8 flex items-center gap-3"
               >
-                <span className="w-2 h-8 bg-[#ffffff] rounded-full" />
+                <span className="w-2 h-8 bg-white/10 rounded-full" />
                 Track Record
               </motion.h3>
 
@@ -138,7 +138,7 @@ export default function AboutMe() {
                     className="relative pl-8 border-l-2 border-white/10 hover:border-[#ffffff]/50 transition-colors"
                   >
                     {/* Timeline dot */}
-                    <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-[#ffffff] border-4 border-black" />
+                    <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-white/10 border-4 border-black" />
 
                     <span className="inline-block px-3 py-1 rounded-full bg-[#ffffff]/20 text-[#ffffff] text-sm font-semibold mb-2">
                       {item.year}

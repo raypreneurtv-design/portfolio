@@ -20,11 +20,11 @@ export default function FinalCTA() {
   return (
     <section className="py-32 relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#ffffff]/20 via-[#000815] to-[#ffffff]/10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-[#0a0a0b] to-transparent" />
 
       {/* Decorative elements */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.1] blur-[150px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-white/10 opacity-[0.1] blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-white/10 opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center" ref={ref}>
         <motion.div
@@ -33,14 +33,12 @@ export default function FinalCTA() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
-            Ready to{' '}
-            <span className="font-bold text-shimmer">3x Your Leads</span>
-            <br />
-            Without Hiring Anyone?
+            Stop losing jobs to{' '}
+            <span className="font-bold">missed calls</span>.
           </h2>
 
           <p className="text-xl text-white/60 mb-10 max-w-2xl mx-auto">
-            Join 50+ home service businesses already using InsightOperator to capture more leads, book more jobs, and grow their revenue.
+            Put an AI receptionist on your phones that answers every call, qualifies the lead, and books the job, around the clock.
           </p>
 
           {/* CTAs */}

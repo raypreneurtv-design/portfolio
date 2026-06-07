@@ -78,7 +78,7 @@ export default function Proof() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-20"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold tracking-wide mb-6">
                         PROOF
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -99,7 +99,7 @@ export default function Proof() {
                                     key={idx}
                                     onClick={() => setActiveCase(idx)}
                                     className={`w-3 h-3 rounded-full transition-all ${activeCase === idx
-                                            ? "bg-[#ffffff] w-8"
+                                            ? "bg-white/10 w-8"
                                             : "bg-white/20 hover:bg-white/40"
                                         }`}
                                 />
@@ -172,7 +172,7 @@ export default function Proof() {
                                 key={idx}
                                 onClick={() => setActiveCase(idx)}
                                 className={`flex-shrink-0 px-4 py-2 rounded-xl text-sm font-medium transition-all ${activeCase === idx
-                                        ? "bg-[#ffffff] text-white"
+                                        ? "bg-white/10 text-white"
                                         : "bg-white/5 text-white/60 hover:bg-white/10"
                                     }`}
                             >

@@ -36,7 +36,7 @@ export default function DemoPage() {
 
       <section className="min-h-screen pt-32 pb-20 relative starry-night">
         {/* Background effects */}
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-white/10 opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#6366f1] opacity-[0.05] blur-[150px] rounded-full pointer-events-none" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -69,7 +69,7 @@ export default function DemoPage() {
                 onClick={() => setActiveDemo(demo.id as 'chat' | 'voice' | 'quote')}
                 className={`px-6 py-3 rounded-xl font-semibold transition-all ${
                   activeDemo === demo.id
-                    ? 'bg-[#ffffff] text-white'
+                    ? 'bg-white/10 text-white'
                     : 'bg-white/5 text-white/60 hover:bg-white/10'
                 }`}
               >
@@ -91,13 +91,13 @@ export default function DemoPage() {
               {activeDemo === 'chat' && (
                 <div>
                   <div className="flex items-center gap-3 mb-6 pb-4 border-b border-white/10">
-                    <div className="w-10 h-10 rounded-full bg-[#ffffff] flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                       <span className="text-lg">❄️</span>
                     </div>
                     <div>
                       <p className="text-white font-semibold">Johnson's HVAC</p>
                       <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-[#ffffff]" />
+                        <span className="w-2 h-2 rounded-full bg-white/10" />
                         <span className="text-white/50 text-sm">AI Assistant Online</span>
                       </div>
                     </div>
@@ -114,7 +114,7 @@ export default function DemoPage() {
                         <div
                           className={`max-w-[85%] px-4 py-3 rounded-2xl ${
                             msg.role === 'user'
-                              ? 'bg-[#ffffff] text-white rounded-br-md'
+                              ? 'bg-white/10 text-white rounded-br-md'
                               : 'bg-white/10 text-white/90 rounded-bl-md'
                           }`}
                         >
@@ -127,7 +127,7 @@ export default function DemoPage() {
                   {visibleMessages < chatMessages.length && (
                     <button
                       onClick={handleChatContinue}
-                      className="mt-4 w-full py-3 rounded-xl bg-[#ffffff]/20 text-[#ffffff] font-semibold hover:bg-[#ffffff]/30 transition-colors"
+                      className="mt-4 w-full py-3 rounded-xl bg-[#ffffff]/20 text-[#ffffff] font-semibold hover:bg-white/10/30 transition-colors"
                     >
                       Continue Conversation →
                     </button>

@@ -221,7 +221,7 @@ export default async function BusinessPreviewPage({ params }: PageProps) {
               Ready to Grow Your {business.name} Business?
             </h2>
             <p className="text-white/60 mb-8 max-w-2xl mx-auto">
-              Join other {business.name.toLowerCase()} companies using InsightOperator to capture more leads and book more jobs.
+              Put an AI receptionist on your {business.name.toLowerCase()} phones and stop missing jobs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/quote">

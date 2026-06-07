@@ -18,9 +18,9 @@ export default function Hero() {
     return (
         <section className="min-h-screen flex flex-col relative overflow-hidden starry-night">
             {/* Ambient glow effects */}
-            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-white/10 opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#6366f1] opacity-[0.06] blur-[150px] rounded-full pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#ffffff] opacity-[0.04] blur-[200px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/10 opacity-[0.04] blur-[200px] rounded-full pointer-events-none" />
 
             {/* Background Logo with gradient fade */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

@@ -105,7 +105,7 @@ export default function Footer() {
                                 href="https://www.skool.com/trendwheel-automations-5905"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 hover:bg-[#ffffff]/30 transition-all"
+                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 hover:bg-white/10/30 transition-all"
                             >
                                 <span className="text-[#ffffff] text-sm font-bold">sk</span>
                             </a>

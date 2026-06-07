@@ -53,7 +53,7 @@ function FeatureCard({ feature, index, isHovered, onHover, onLeave }: FeatureCar
       onMouseLeave={onLeave}
       className={`rounded-3xl p-8 transition-all duration-300 cursor-pointer h-full ${
         isHovered
-          ? 'bg-[#ffffff] text-white'
+          ? 'bg-white/10 text-white'
           : 'bg-white/5 border border-white/10 text-white'
       }`}
     >

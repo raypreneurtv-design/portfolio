@@ -56,7 +56,7 @@ export default function FreeResources() {
             <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0b] to-black" />
 
             {/* Decorative glow */}
-            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.03] blur-[150px] rounded-full -translate-x-1/2" />
+            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-white/10 opacity-[0.03] blur-[150px] rounded-full -translate-x-1/2" />
             <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#6366f1] opacity-[0.03] blur-[150px] rounded-full translate-x-1/2" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
@@ -128,7 +128,7 @@ export default function FreeResources() {
                                     </p>
                                 </div>
                                 <div className="flex-shrink-0 self-center">
-                                    <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#ffffff]/20 transition-colors">
+                                    <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10/20 transition-colors">
                                         <svg className="w-4 h-4 text-white/40 group-hover:text-[#ffffff] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                             <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -193,7 +193,7 @@ export default function FreeResources() {
                                         whileTap={{ scale: 0.98 }}
                                         className="flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white font-bold hover:bg-white/20 transition-colors"
                                     >
-                                        <span className="w-6 h-6 rounded bg-[#ffffff] text-white text-sm font-bold flex items-center justify-center">sk</span>
+                                        <span className="w-6 h-6 rounded bg-white/10 text-white text-sm font-bold flex items-center justify-center">sk</span>
                                         Join Skool Community
                                     </motion.a>
                                 </div>
@@ -220,7 +220,7 @@ export default function FreeResources() {
                                                 <span className="text-white/70">Live workshop in 2 hours</span>
                                             </div>
                                             <div className="flex items-center gap-2 text-sm">
-                                                <span className="w-2 h-2 rounded-full bg-[#ffffff]" />
+                                                <span className="w-2 h-2 rounded-full bg-white/10" />
                                                 <span className="text-white/70">New template dropped today</span>
                                             </div>
                                             <div className="flex items-center gap-2 text-sm">

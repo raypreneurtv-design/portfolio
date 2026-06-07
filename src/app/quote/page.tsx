@@ -16,8 +16,8 @@ export default function QuotePage() {
 
       <section className="min-h-screen pt-28 pb-20 relative starry-night">
         {/* Background effects */}
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.05] blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-white/10 opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-white/10 opacity-[0.05] blur-[150px] rounded-full pointer-events-none" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           {/* Header */}
@@ -40,7 +40,7 @@ export default function QuotePage() {
                 onClick={() => setActiveTab('instant')}
                 className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all ${
                   activeTab === 'instant'
-                    ? 'bg-[#ffffff] text-white shadow-lg shadow-[#ffffff]/20'
+                    ? 'bg-white/10 text-white shadow-lg shadow-[#ffffff]/20'
                     : 'text-white/50 hover:text-white/80'
                 }`}
               >
@@ -50,7 +50,7 @@ export default function QuotePage() {
                 onClick={() => setActiveTab('custom')}
                 className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all ${
                   activeTab === 'custom'
-                    ? 'bg-[#ffffff] text-white shadow-lg shadow-[#ffffff]/20'
+                    ? 'bg-white/10 text-white shadow-lg shadow-[#ffffff]/20'
                     : 'text-white/50 hover:text-white/80'
                 }`}
               >
@@ -74,7 +74,7 @@ export default function QuotePage() {
                 <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden">
                   {/* Agent header */}
                   <div className="px-6 py-4 border-b border-white/5 flex items-center gap-3">
-                    <div className="w-3 h-3 rounded-full bg-[#ffffff] animate-pulse" />
+                    <div className="w-3 h-3 rounded-full bg-white/10 animate-pulse" />
                     <div>
                       <p className="text-sm font-semibold text-white">HVAC Quote Agent</p>
                       <p className="text-xs text-white/40">Answer a few questions for an instant estimate</p>

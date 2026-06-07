@@ -1,10 +1,12 @@
 'use client';
 
-// "Runs on" — the stack Insight Operator is built with. Monochrome logos via the Simple Icons CDN.
-// To use a real/local logo (e.g. Retell, which has no Simple Icon), drop an SVG in /public/logos
-// and set its src to `/logos/<name>.svg`. Missing CDN logos hide gracefully (onError).
-const items: { name: string; slug?: string }[] = [
-  { name: 'Retell AI' }, // no Simple Icon — renders as text wordmark
+import type { SyntheticEvent } from 'react';
+
+// "Runs on" — the stack Insight Operator is built with.
+// Each logo tries: local /public/logos/<slug>.svg  ->  Simple Icons CDN  ->  plain text.
+// To use your own/real logos, drop monochrome SVGs in /public/logos (e.g. openai.svg, twilio.svg, retell.svg).
+const items: { name: string; slug: string }[] = [
+  { name: 'Retell AI', slug: 'retell' },
   { name: 'n8n', slug: 'n8n' },
   { name: 'Twilio', slug: 'twilio' },
   { name: 'Google Calendar', slug: 'googlecalendar' },
@@ -14,6 +16,20 @@ const items: { name: string; slug?: string }[] = [
   { name: 'Vercel', slug: 'vercel' },
 ];
 
+function handleError(e: SyntheticEvent<HTMLImageElement>, slug: string) {
+  const img = e.currentTarget;
+  if (img.dataset.stage !== 'cdn') {
+    // local file missing -> try the CDN
+    img.dataset.stage = 'cdn';
+    img.src = `https://cdn.simpleicons.org/${slug}/a1a1aa`;
+  } else {
+    // CDN missing too -> fall back to the text label
+    img.style.display = 'none';
+    const sib = img.nextElementSibling as HTMLElement | null;
+    if (sib) sib.style.display = 'inline';
+  }
+}
+
 export default function LogoMarquee() {
   const row = [...items, ...items];
   return (
@@ -21,20 +37,15 @@ export default function LogoMarquee() {
       <div className="io-marquee-track">
         {row.map((item, i) => (
           <span key={i} className="io-marquee-item">
-            {item.slug ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={`https://cdn.simpleicons.org/${item.slug}/a1a1aa`}
-                alt={item.name}
-                className="io-marquee-logo"
-                loading="lazy"
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.display = 'none';
-                }}
-              />
-            ) : (
-              item.name
-            )}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`/logos/${item.slug}.svg`}
+              alt={item.name}
+              className="io-marquee-logo"
+              loading="lazy"
+              onError={(e) => handleError(e, item.slug)}
+            />
+            <span style={{ display: 'none' }}>{item.name}</span>
           </span>
         ))}
       </div>

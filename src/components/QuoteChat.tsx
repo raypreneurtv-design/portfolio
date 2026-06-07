@@ -341,7 +341,7 @@ export default function QuoteChat() {
               <div
                 className={`max-w-[85%] md:max-w-[70%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   msg.role === "user"
-                    ? "bg-[#ffffff] text-white rounded-br-sm"
+                    ? "bg-white/10 text-white rounded-br-sm"
                     : "bg-white/10 text-white/90 rounded-bl-sm border border-white/5"
                 }`}
               >

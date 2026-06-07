@@ -130,7 +130,7 @@ export default function QuoteForm() {
             href="https://calendly.com/insightoperator/quote-call"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-[#e7e7ea] transition-colors"
+            className="px-6 py-3 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-white/15 transition-colors"
           >
             Book a Call Now
           </a>
@@ -158,7 +158,7 @@ export default function QuoteForm() {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all ${
                   currentStep >= step.num
-                    ? 'bg-[#ffffff] text-white'
+                    ? 'bg-white/10 text-white'
                     : 'bg-white/10 text-white/40'
                 }`}
               >
@@ -173,7 +173,7 @@ export default function QuoteForm() {
               {index < steps.length - 1 && (
                 <div
                   className={`flex-1 h-1 mx-2 rounded-full transition-all ${
-                    currentStep > step.num ? 'bg-[#ffffff]' : 'bg-white/10'
+                    currentStep > step.num ? 'bg-white/10' : 'bg-white/10'
                   }`}
                 />
               )}
@@ -273,7 +273,7 @@ export default function QuoteForm() {
                         </div>
                         <div
                           className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                            isSelected ? 'bg-[#ffffff]' : 'bg-white/10'
+                            isSelected ? 'bg-white/10' : 'bg-white/10'
                           }`}
                         >
                           {isSelected && (

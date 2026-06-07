@@ -27,8 +27,8 @@ export default function BusinessPreview() {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000815] to-black" />
 
       {/* Decorative elements */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.05] blur-[150px] rounded-full" />
-      <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.03] blur-[150px] rounded-full" />
+      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-white/10 opacity-[0.05] blur-[150px] rounded-full" />
+      <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-white/10 opacity-[0.03] blur-[150px] rounded-full" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
         <motion.div

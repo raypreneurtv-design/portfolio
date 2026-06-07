@@ -66,7 +66,7 @@ export default function About() {
                                         transition={{ delay: 0.3 + index * 0.1 }}
                                         className="flex items-start gap-3"
                                     >
-                                        <span className="w-2 h-2 rounded-full bg-[#ffffff] mt-2 flex-shrink-0" />
+                                        <span className="w-2 h-2 rounded-full bg-white/10 mt-2 flex-shrink-0" />
                                         <span className="text-white/70">{item}</span>
                                     </motion.div>
                                 ))}
