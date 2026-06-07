@@ -373,3 +373,120 @@ html {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(0, 168, 255, 0.15);
 }
+
+/* ============================================================
+   Insight Operator — ink system (see design.md)
+   Refined dark, monochrome. Overrides the legacy theme above.
+   ============================================================ */
+:root {
+  --io-surface-base: #0a0a0b;
+  --io-surface-raised: #121214;
+  --io-surface-muted: #18181b;
+  --io-border: rgba(255, 255, 255, 0.10);
+  --io-border-strong: rgba(255, 255, 255, 0.18);
+  --io-text-primary: #f5f5f7;
+  --io-text-secondary: #a1a1aa;
+  --io-text-tertiary: #71717a;
+  --io-glow: rgba(180, 200, 255, 0.9);
+}
+
+body {
+  font-family: var(--font-dm), 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--io-surface-base);
+  color: var(--io-text-primary);
+}
+
+/* --- Hero --- */
+.io-hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--io-surface-base);
+  padding: 8rem 1.5rem 3rem;
+}
+.io-hero-inner {
+  position: relative;
+  z-index: 10;
+  max-width: 52rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.io-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--io-text-tertiary);
+  margin-bottom: 1.5rem;
+}
+.io-h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  color: var(--io-text-primary);
+  margin-bottom: 1.5rem;
+}
+.io-sub {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--io-text-secondary);
+  max-width: 38rem;
+  margin: 0 auto 2.5rem;
+}
+.io-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* --- Buttons (ink) --- */
+.io-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.85rem 1.6rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+.io-btn-primary { background: #ffffff; color: #0a0a0b; }
+.io-btn-primary:hover { background: #e7e7ea; transform: translateY(-1px); }
+.io-btn-secondary { background: transparent; color: var(--io-text-primary); border: 1px solid var(--io-border-strong); }
+.io-btn-secondary:hover { border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.04); }
+.io-btn:focus-visible { outline: 2px solid var(--io-text-primary); outline-offset: 2px; }
+
+/* --- Dot grid with cursor glow (the only hero effect) --- */
+.io-dotgrid-wrap { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.io-dotgrid, .io-dotgrid-glow {
+  position: absolute; inset: -2px;
+  background-image: radial-gradient(currentColor 1px, transparent 1.6px);
+  background-size: 24px 24px;
+}
+.io-dotgrid { color: rgba(255, 255, 255, 0.10); }
+.io-dotgrid-glow {
+  color: var(--io-glow);
+  -webkit-mask-image: radial-gradient(240px circle at var(--mx, 50%) var(--my, -300px), #000 0%, transparent 65%);
+  mask-image: radial-gradient(240px circle at var(--mx, 50%) var(--my, -300px), #000 0%, transparent 65%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .io-dotgrid-glow { display: none; }
+}
+
+/* --- Logo marquee --- */
+.io-hero-marquee { position: relative; z-index: 10; width: 100%; max-width: 60rem; margin: 4rem auto 0; }
+.io-marquee-label { text-align: center; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem; font-weight: 600; color: var(--io-text-tertiary); margin-bottom: 1.25rem; }
+.io-marquee { overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); }
+.io-marquee-track { display: flex; gap: 3rem; width: max-content; animation: io-marquee 30s linear infinite; }
+.io-marquee:hover .io-marquee-track { animation-play-state: paused; }
+.io-marquee-item { white-space: nowrap; font-weight: 600; font-size: 0.95rem; color: var(--io-text-tertiary); letter-spacing: 0.01em; }
+@keyframes io-marquee { to { transform: translateX(-50%); } }
