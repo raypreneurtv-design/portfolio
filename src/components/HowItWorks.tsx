@@ -37,7 +37,7 @@ export default function HowItWorks() {
                 >
                     <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
                         Here is how we fix it in <br />
-                        <span className="text-[#00a8ff]">3 simple steps</span>
+                        <span className="text-[#ffffff]">3 simple steps</span>
                     </h2>
                 </motion.div>
 
@@ -50,7 +50,7 @@ export default function HowItWorks() {
                             transition={{ delay: index * 0.1 }}
                             className="text-center p-8"
                         >
-                            <div className="w-16 h-16 bg-[#00a8ff]/10 rounded-full flex items-center justify-center mx-auto mb-6 text-[#00a8ff] font-bold text-xl">
+                            <div className="w-16 h-16 bg-[#ffffff]/10 rounded-full flex items-center justify-center mx-auto mb-6 text-[#ffffff] font-bold text-xl">
                                 {step.num}
                             </div>
                             <h3 className="text-xl font-bold text-black mb-4">{step.title}</h3>

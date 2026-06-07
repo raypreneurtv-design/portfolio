@@ -100,7 +100,7 @@ function ServiceCard({ service, index, isHovered, onHover, onLeave }: {
                 onMouseEnter={onHover}
                 onMouseLeave={onLeave}
                 className={`rounded-3xl p-8 transition-all duration-300 cursor-pointer h-full ${isHovered
-                        ? 'bg-[#00a8ff] text-white'
+                        ? 'bg-[#ffffff] text-white'
                         : 'bg-white/5 border border-white/10 text-white'
                     }`}
             >
@@ -112,7 +112,7 @@ function ServiceCard({ service, index, isHovered, onHover, onLeave }: {
                 <p className={`mb-6 ${isHovered ? 'text-white/90' : 'text-white/60'}`}>
                     {service.description}
                 </p>
-                <div className={`flex items-center gap-2 font-semibold ${isHovered ? 'text-white' : 'text-[#00a8ff]'
+                <div className={`flex items-center gap-2 font-semibold ${isHovered ? 'text-white' : 'text-[#ffffff]'
                     }`}>
                     Learn More
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -141,7 +141,7 @@ export default function Services() {
                     transition={{ duration: 0.8 }}
                     className="mb-20"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         SERVICES
                     </span>
                     <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-12">
@@ -175,7 +175,7 @@ export default function Services() {
                     transition={{ duration: 0.8 }}
                     className="mb-32"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         WHAT WE BUILD
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-12">
@@ -190,13 +190,13 @@ export default function Services() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#00a8ff]/40 transition-all group"
+                                className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#ffffff]/40 transition-all group"
                             >
-                                <div className="w-12 h-12 rounded-xl border border-[#00a8ff]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#00a8ff] group-hover:bg-[#00a8ff]/10 transition-all">
+                                <div className="w-12 h-12 rounded-xl border border-[#ffffff]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#ffffff] group-hover:bg-[#ffffff]/10 transition-all">
                                     <span className="text-xl">{solution.icon}</span>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-white mb-1 group-hover:text-[#00a8ff] transition-colors">
+                                    <h3 className="text-lg font-bold text-white mb-1 group-hover:text-[#ffffff] transition-colors">
                                         {solution.title}
                                     </h3>
                                     <p className="text-white/50 text-sm">{solution.description}</p>
@@ -214,7 +214,7 @@ export default function Services() {
                     transition={{ duration: 0.8 }}
                     className="mb-32"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         PROCESS
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-16">
@@ -248,7 +248,7 @@ export default function Services() {
                     transition={{ duration: 0.8 }}
                     className="text-center"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         RESULTS
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-16">

@@ -26,7 +26,7 @@ Implementation-ready, token-driven UI guidance for the Insight Operator marketin
   - `color.accent = #ffffff` (the ONE pop: solid white primary buttons, black text)
   - `color.glow = rgba(180,200,255,0.55)` (cool white — used ONLY for the hero dot-grid cursor glow, nowhere else)
 - Spacing scale (px): `1=4, 2=8, 3=12, 4=16, 5=24, 6=32, 7=48, 8=64, 9=96, 10=128`.
-- Radius: `sm=8px`, `md=12px`, `lg=16px`, `pill=999px`.
+- Radius: **0 everywhere**. No rounded corners anywhere (sharp/clean — Ray's rule). Enforced globally in `globals.css`.
 - Motion: `instant=150ms`, `fast=250ms`, `normal=400ms`. Easing `cubic-bezier(0.4,0,0.2,1)`. Subtle only — fades and small slides on scroll, never bounce/glitch.
 
 ## Signature Interactions (the only two effects allowed)

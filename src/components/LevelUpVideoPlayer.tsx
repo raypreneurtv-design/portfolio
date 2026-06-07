@@ -9,7 +9,7 @@ interface LevelUpVideoPlayerProps {
 
 export default function LevelUpVideoPlayer({ className = '' }: LevelUpVideoPlayerProps) {
     return (
-        <div className={`relative rounded-2xl overflow-hidden shadow-2xl shadow-[#00a8ff]/10 border border-white/10 ${className}`}>
+        <div className={`relative rounded-2xl overflow-hidden shadow-2xl shadow-[#ffffff]/10 border border-white/10 ${className}`}>
             <Player
                 component={LevelUpVideo}
                 durationInFrames={600}

@@ -27,8 +27,8 @@ export default function BusinessPreview() {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000815] to-black" />
 
       {/* Decorative elements */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[#00a8ff] opacity-[0.05] blur-[150px] rounded-full" />
-      <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#00ff87] opacity-[0.03] blur-[150px] rounded-full" />
+      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.05] blur-[150px] rounded-full" />
+      <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.03] blur-[150px] rounded-full" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
         <motion.div
@@ -83,7 +83,7 @@ export default function BusinessPreview() {
                 key={selectedBusiness.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-gradient-to-br from-[#00a8ff]/10 to-[#6366f1]/10 rounded-2xl p-6 border border-[#00a8ff]/20"
+                className="bg-gradient-to-br from-[#ffffff]/10 to-[#6366f1]/10 rounded-2xl p-6 border border-[#ffffff]/20"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl">{selectedBusiness.icon}</span>
@@ -127,7 +127,7 @@ export default function BusinessPreview() {
               {/* Browser header */}
               <div className="flex items-center gap-2 px-4 py-3 bg-[#0d0d1a] border-b border-white/10">
                 <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500" />
+                  <div className="w-3 h-3 rounded-full bg-white" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500" />
                   <div className="w-3 h-3 rounded-full bg-green-500" />
                 </div>
@@ -225,7 +225,7 @@ export default function BusinessPreview() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.7 }}
-              className="absolute -bottom-4 left-4 bg-[#00ff87] text-black px-4 py-2 rounded-xl font-bold text-sm shadow-lg"
+              className="absolute -bottom-4 left-4 bg-[#ffffff] text-black px-4 py-2 rounded-xl font-bold text-sm shadow-lg"
             >
               ✓ Works on any website
             </motion.div>

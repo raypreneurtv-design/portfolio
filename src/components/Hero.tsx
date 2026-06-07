@@ -18,9 +18,9 @@ export default function Hero() {
     return (
         <section className="min-h-screen flex flex-col relative overflow-hidden starry-night">
             {/* Ambient glow effects */}
-            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#00a8ff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#6366f1] opacity-[0.06] blur-[150px] rounded-full pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#00a8ff] opacity-[0.04] blur-[200px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#ffffff] opacity-[0.04] blur-[200px] rounded-full pointer-events-none" />
 
             {/* Background Logo with gradient fade */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -49,9 +49,9 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a8ff]/15 border border-[#00a8ff]/30 mb-10 backdrop-blur-sm"
+                        className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#ffffff]/15 border border-[#ffffff]/30 mb-10 backdrop-blur-sm"
                     >
-                        <span className="text-sm font-semibold text-[#00a8ff] tracking-widest uppercase">
+                        <span className="text-sm font-semibold text-[#ffffff] tracking-widest uppercase">
                             AI Transformation Partner
                         </span>
                     </motion.div>
@@ -91,7 +91,7 @@ export default function Hero() {
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg border-2 border-white/20 text-white hover:border-[#00a8ff] hover:text-[#00a8ff] transition-all bg-white/5 backdrop-blur-sm shadow-lg hover:shadow-[#00a8ff]/20"
+                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg border-2 border-white/20 text-white hover:border-[#ffffff] hover:text-[#ffffff] transition-all bg-white/5 backdrop-blur-sm shadow-lg hover:shadow-[#ffffff]/20"
                         >
                             Get started
                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

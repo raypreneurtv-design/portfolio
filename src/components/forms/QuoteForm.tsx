@@ -116,7 +116,7 @@ export default function QuoteForm() {
         animate={{ opacity: 1, scale: 1 }}
         className="text-center py-12"
       >
-        <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#00ff87] to-[#00a8ff] flex items-center justify-center">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffffff] to-[#ffffff] flex items-center justify-center">
           <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -130,7 +130,7 @@ export default function QuoteForm() {
             href="https://calendly.com/insightoperator/quote-call"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl bg-[#00ff87] text-black font-bold hover:bg-[#00e077] transition-colors"
+            className="px-6 py-3 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-[#e7e7ea] transition-colors"
           >
             Book a Call Now
           </a>
@@ -158,7 +158,7 @@ export default function QuoteForm() {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all ${
                   currentStep >= step.num
-                    ? 'bg-[#00a8ff] text-white'
+                    ? 'bg-[#ffffff] text-white'
                     : 'bg-white/10 text-white/40'
                 }`}
               >
@@ -173,7 +173,7 @@ export default function QuoteForm() {
               {index < steps.length - 1 && (
                 <div
                   className={`flex-1 h-1 mx-2 rounded-full transition-all ${
-                    currentStep > step.num ? 'bg-[#00a8ff]' : 'bg-white/10'
+                    currentStep > step.num ? 'bg-[#ffffff]' : 'bg-white/10'
                   }`}
                 />
               )}
@@ -250,7 +250,7 @@ export default function QuoteForm() {
           >
             <div>
               <label className="block text-sm font-semibold text-white mb-4">
-                What tools do you need? <span className="text-red-400">*</span>
+                What tools do you need? <span className="text-zinc-400">*</span>
               </label>
               <div className="grid gap-3">
                 {serviceOptions.map((service) => {
@@ -262,7 +262,7 @@ export default function QuoteForm() {
                       onClick={() => toggleService(service.id)}
                       className={`p-4 rounded-xl text-left transition-all ${
                         isSelected
-                          ? 'bg-[#00a8ff]/20 border-2 border-[#00a8ff]'
+                          ? 'bg-[#ffffff]/20 border-2 border-[#ffffff]'
                           : 'bg-white/5 border-2 border-white/10 hover:border-white/20'
                       }`}
                     >
@@ -273,7 +273,7 @@ export default function QuoteForm() {
                         </div>
                         <div
                           className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                            isSelected ? 'bg-[#00a8ff]' : 'bg-white/10'
+                            isSelected ? 'bg-[#ffffff]' : 'bg-white/10'
                           }`}
                         >
                           {isSelected && (
@@ -288,7 +288,7 @@ export default function QuoteForm() {
                 })}
               </div>
               {serviceSelectionForm.formState.errors.services && (
-                <p className="mt-2 text-sm text-red-400">
+                <p className="mt-2 text-sm text-zinc-400">
                   {serviceSelectionForm.formState.errors.services.message}
                 </p>
               )}
@@ -300,7 +300,7 @@ export default function QuoteForm() {
               </label>
               <textarea
                 placeholder="Tell us about your current lead generation challenges..."
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 text-sm resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#ffffff]/50 focus:outline-none focus:ring-2 focus:ring-[#ffffff]/20 transition-all text-white placeholder:text-white/30 text-sm resize-none"
                 rows={4}
                 {...serviceSelectionForm.register('currentChallenges')}
               />

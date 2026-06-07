@@ -341,7 +341,7 @@ export default function QuoteChat() {
               <div
                 className={`max-w-[85%] md:max-w-[70%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   msg.role === "user"
-                    ? "bg-[#00a8ff] text-white rounded-br-sm"
+                    ? "bg-[#ffffff] text-white rounded-br-sm"
                     : "bg-white/10 text-white/90 rounded-bl-sm border border-white/5"
                 }`}
               >
@@ -367,7 +367,7 @@ export default function QuoteChat() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-lg mx-auto"
           >
-            <div className="rounded-2xl border border-[#00a8ff]/30 bg-[#0a1628]/90 backdrop-blur-xl p-6">
+            <div className="rounded-2xl border border-[#ffffff]/30 bg-[#0a0a0b]/90 backdrop-blur-xl p-6">
               <p className="text-sm text-white/70 mb-4">
                 Enter your email to download the detailed PDF quote:
               </p>
@@ -377,7 +377,7 @@ export default function QuoteChat() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#00a8ff]/50 transition-colors"
+                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#ffffff]/50 transition-colors"
                   onKeyDown={(e) => {
                     if (e.key === "Enter") handleSendPdf();
                   }}

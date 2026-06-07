@@ -14,7 +14,7 @@ const resources = [
             </svg>
         ),
         tag: "FREE GUIDE",
-        color: "from-[#00a8ff] to-[#0077cc]",
+        color: "from-[#ffffff] to-[#e7e7ea]",
     },
     {
         title: "n8n Workflow Templates",
@@ -53,10 +53,10 @@ export default function FreeResources() {
 
     return (
         <section id="resources" className="py-32 relative bg-black overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000810] to-black" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0b] to-black" />
 
             {/* Decorative glow */}
-            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#00a8ff] opacity-[0.03] blur-[150px] rounded-full -translate-x-1/2" />
+            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.03] blur-[150px] rounded-full -translate-x-1/2" />
             <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#6366f1] opacity-[0.03] blur-[150px] rounded-full translate-x-1/2" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
@@ -66,7 +66,7 @@ export default function FreeResources() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-[#00a8ff] to-[#6366f1] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-[#ffffff] to-[#6366f1] text-white text-xs font-bold tracking-wide mb-6">
                         FREE RESOURCES
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -83,7 +83,7 @@ export default function FreeResources() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="max-w-4xl mx-auto"
                     >
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#00a8ff]/10 border border-white/10">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#ffffff]/10 border border-white/10">
                             <video
                                 autoPlay
                                 loop
@@ -105,7 +105,7 @@ export default function FreeResources() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ delay: index * 0.1 }}
-                            className="group relative p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#00a8ff]/40 transition-all overflow-hidden"
+                            className="group relative p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#ffffff]/40 transition-all overflow-hidden"
                         >
                             {/* Gradient overlay on hover */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${resource.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
@@ -120,7 +120,7 @@ export default function FreeResources() {
                                             {resource.tag}
                                         </span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#00a8ff] transition-colors">
+                                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#ffffff] transition-colors">
                                         {resource.title}
                                     </h3>
                                     <p className="text-white/50 text-sm leading-relaxed">
@@ -128,8 +128,8 @@ export default function FreeResources() {
                                     </p>
                                 </div>
                                 <div className="flex-shrink-0 self-center">
-                                    <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#00a8ff]/20 transition-colors">
-                                        <svg className="w-4 h-4 text-white/40 group-hover:text-[#00a8ff] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#ffffff]/20 transition-colors">
+                                        <svg className="w-4 h-4 text-white/40 group-hover:text-[#ffffff] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                             <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </div>
@@ -147,7 +147,7 @@ export default function FreeResources() {
                     className="relative rounded-3xl overflow-hidden"
                 >
                     {/* Background gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#00a8ff]/20 via-[#6366f1]/20 to-[#00a8ff]/20" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#ffffff]/20 via-[#6366f1]/20 to-[#ffffff]/20" />
                     <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
 
                     <div className="relative z-10 p-8 md:p-12">
@@ -193,7 +193,7 @@ export default function FreeResources() {
                                         whileTap={{ scale: 0.98 }}
                                         className="flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white font-bold hover:bg-white/20 transition-colors"
                                     >
-                                        <span className="w-6 h-6 rounded bg-[#00a8ff] text-white text-sm font-bold flex items-center justify-center">sk</span>
+                                        <span className="w-6 h-6 rounded bg-[#ffffff] text-white text-sm font-bold flex items-center justify-center">sk</span>
                                         Join Skool Community
                                     </motion.a>
                                 </div>
@@ -202,12 +202,12 @@ export default function FreeResources() {
                             {/* Visual element */}
                             <div className="hidden lg:block">
                                 <div className="relative">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-[#00a8ff] to-[#6366f1] blur-3xl opacity-20" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-[#ffffff] to-[#6366f1] blur-3xl opacity-20" />
                                     <div className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="flex -space-x-2">
                                                 {[...Array(4)].map((_, i) => (
-                                                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] border-2 border-black flex items-center justify-center text-xs text-white font-bold">
+                                                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] border-2 border-black flex items-center justify-center text-xs text-white font-bold">
                                                         {String.fromCharCode(65 + i)}
                                                     </div>
                                                 ))}
@@ -220,7 +220,7 @@ export default function FreeResources() {
                                                 <span className="text-white/70">Live workshop in 2 hours</span>
                                             </div>
                                             <div className="flex items-center gap-2 text-sm">
-                                                <span className="w-2 h-2 rounded-full bg-[#00a8ff]" />
+                                                <span className="w-2 h-2 rounded-full bg-[#ffffff]" />
                                                 <span className="text-white/70">New template dropped today</span>
                                             </div>
                                             <div className="flex items-center gap-2 text-sm">

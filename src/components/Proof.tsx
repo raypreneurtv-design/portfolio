@@ -68,7 +68,7 @@ export default function Proof() {
 
     return (
         <section id="proof" className="py-32 relative bg-black">
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000810] to-black" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0b] to-black" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
                 {/* Header */}
@@ -78,7 +78,7 @@ export default function Proof() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-20"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         PROOF
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -99,7 +99,7 @@ export default function Proof() {
                                     key={idx}
                                     onClick={() => setActiveCase(idx)}
                                     className={`w-3 h-3 rounded-full transition-all ${activeCase === idx
-                                            ? "bg-[#00a8ff] w-8"
+                                            ? "bg-[#ffffff] w-8"
                                             : "bg-white/20 hover:bg-white/40"
                                         }`}
                                 />
@@ -115,14 +115,14 @@ export default function Proof() {
                         className="grid lg:grid-cols-2 gap-8"
                     >
                         {/* Left - Details */}
-                        <div className="bg-gradient-to-br from-[#00a8ff]/10 to-[#6366f1]/10 rounded-3xl p-8 border border-[#00a8ff]/20">
-                            <span className="inline-block px-3 py-1 rounded-full bg-[#00a8ff]/20 text-[#00a8ff] text-xs font-bold mb-4">
+                        <div className="bg-gradient-to-br from-[#ffffff]/10 to-[#6366f1]/10 rounded-3xl p-8 border border-[#ffffff]/20">
+                            <span className="inline-block px-3 py-1 rounded-full bg-[#ffffff]/20 text-[#ffffff] text-xs font-bold mb-4">
                                 {caseStudies[activeCase].tag}
                             </span>
                             <h4 className="text-2xl font-bold text-white mb-2">
                                 {caseStudies[activeCase].title}
                             </h4>
-                            <p className="text-3xl font-black text-[#00a8ff] mb-4">
+                            <p className="text-3xl font-black text-[#ffffff] mb-4">
                                 {caseStudies[activeCase].result}
                             </p>
                             <p className="text-white/60 mb-8">
@@ -146,7 +146,7 @@ export default function Proof() {
                         {/* Right - Visual */}
                         <div className="bg-white/5 rounded-3xl p-8 border border-white/10 flex items-center justify-center">
                             <div className="text-center">
-                                <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center">
+                                <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center">
                                     <svg className="w-12 h-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
@@ -154,7 +154,7 @@ export default function Proof() {
                                 <p className="text-white/40 text-sm mb-4">Video case study coming soon</p>
                                 <a
                                     href="#contact"
-                                    className="inline-flex items-center gap-2 text-[#00a8ff] font-semibold hover:underline"
+                                    className="inline-flex items-center gap-2 text-[#ffffff] font-semibold hover:underline"
                                 >
                                     Want similar results?
                                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -172,7 +172,7 @@ export default function Proof() {
                                 key={idx}
                                 onClick={() => setActiveCase(idx)}
                                 className={`flex-shrink-0 px-4 py-2 rounded-xl text-sm font-medium transition-all ${activeCase === idx
-                                        ? "bg-[#00a8ff] text-white"
+                                        ? "bg-[#ffffff] text-white"
                                         : "bg-white/5 text-white/60 hover:bg-white/10"
                                     }`}
                             >
@@ -192,11 +192,11 @@ export default function Proof() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ delay: 0.2 + index * 0.1 }}
-                                className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-[#00a8ff]/30 transition-all"
+                                className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-[#ffffff]/30 transition-all"
                             >
                                 <div className="flex gap-1 mb-4">
                                     {[...Array(5)].map((_, i) => (
-                                        <svg key={i} className="w-4 h-4 text-[#00a8ff]" viewBox="0 0 24 24" fill="currentColor">
+                                        <svg key={i} className="w-4 h-4 text-[#ffffff]" viewBox="0 0 24 24" fill="currentColor">
                                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                         </svg>
                                     ))}
@@ -205,7 +205,7 @@ export default function Proof() {
                                     "{testimonial.quote}"
                                 </p>
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center text-white font-bold">
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center text-white font-bold">
                                         {testimonial.avatar}
                                     </div>
                                     <div>

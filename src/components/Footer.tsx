@@ -47,7 +47,7 @@ export default function Footer() {
                             </div>
                             <div>
                                 <span className="text-lg font-bold text-white">
-                                    Insight<span className="text-[#00a8ff]">Operator</span>
+                                    Insight<span className="text-[#ffffff]">Operator</span>
                                 </span>
                             </div>
                         </motion.div>
@@ -67,7 +67,7 @@ export default function Footer() {
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-sm text-white/50 hover:text-[#00a8ff] transition-colors"
+                                    className="text-sm text-white/50 hover:text-[#ffffff] transition-colors"
                                 >
                                     {link.name}
                                 </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-sm text-white/50 hover:text-[#00a8ff] transition-colors"
+                                    className="text-sm text-white/50 hover:text-[#ffffff] transition-colors"
                                 >
                                     {link.name}
                                 </a>
@@ -105,9 +105,9 @@ export default function Footer() {
                                 href="https://www.skool.com/trendwheel-automations-5905"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#00a8ff]/20 border border-[#00a8ff]/30 hover:bg-[#00a8ff]/30 transition-all"
+                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 hover:bg-[#ffffff]/30 transition-all"
                             >
-                                <span className="text-[#00a8ff] text-sm font-bold">sk</span>
+                                <span className="text-[#ffffff] text-sm font-bold">sk</span>
                             </a>
                             <a
                                 href="#"

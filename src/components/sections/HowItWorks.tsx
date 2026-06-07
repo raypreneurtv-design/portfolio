@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Badge } from '@/components/ui/Badge';
+import DotGridBackground from '@/components/DotGridBackground';
 
 const painPoints = [
   {
@@ -89,8 +90,8 @@ export default function HowItWorks() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="how-it-works" className="py-32 relative bg-black">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000810] to-black" />
+    <section id="how-it-works" className="py-32 relative bg-[#0a0a0b] overflow-hidden">
+      <DotGridBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
         {/* Section Header */}
@@ -121,12 +122,12 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-red-500/30 transition-all group"
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-white/30 transition-all group"
             >
-              <div className="w-16 h-16 rounded-xl bg-red-500/20 flex items-center justify-center text-red-400 mb-6 group-hover:bg-red-500/30 transition-all">
+              <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center text-zinc-400 mb-6 group-hover:bg-white/30 transition-all">
                 {pain.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-zinc-400 transition-colors">
                 {pain.title}
               </h3>
               <p className="text-white/60 leading-relaxed">{pain.description}</p>
@@ -147,14 +148,14 @@ export default function HowItWorks() {
           </Badge>
           <h2 className="text-3xl md:text-4xl font-light text-white">
             Here is how we fix it in{' '}
-            <span className="font-bold text-[#00ff87]">3 simple steps</span>
+            <span className="font-bold text-[#ffffff]">3 simple steps</span>
           </h2>
         </motion.div>
 
         {/* Steps */}
         <div className="relative">
           {/* Connecting line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#00a8ff]/30 to-transparent -translate-y-1/2" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#ffffff]/30 to-transparent -translate-y-1/2" />
 
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {steps.map((step, index) => (
@@ -167,18 +168,18 @@ export default function HowItWorks() {
                 className="relative"
               >
                 {/* Step card */}
-                <div className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-[#00a8ff]/30 transition-all group">
+                <div className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-[#ffffff]/30 transition-all group">
                   {/* Step number */}
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-6xl font-bold text-white/10 group-hover:text-[#00a8ff]/20 transition-colors">
+                    <span className="text-6xl font-bold text-white/10 group-hover:text-[#ffffff]/20 transition-colors">
                       {step.num}
                     </span>
-                    <div className="w-14 h-14 rounded-xl bg-[#00a8ff]/20 flex items-center justify-center text-[#00a8ff] group-hover:bg-[#00a8ff] group-hover:text-white transition-all">
+                    <div className="w-14 h-14 rounded-xl bg-[#ffffff]/20 flex items-center justify-center text-[#ffffff] group-hover:bg-[#ffffff] group-hover:text-white transition-all">
                       {step.icon}
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#00a8ff] transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#ffffff] transition-colors">
                     {step.title}
                   </h3>
 
@@ -193,7 +194,7 @@ export default function HowItWorks() {
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.2 + 0.3 }}
-                      className="w-12 h-12 rounded-full bg-[#00a8ff] flex items-center justify-center"
+                      className="w-12 h-12 rounded-full bg-[#ffffff] flex items-center justify-center"
                     >
                       <svg
                         className="w-6 h-6 text-white"
@@ -220,14 +221,14 @@ export default function HowItWorks() {
           transition={{ delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[#00a8ff]/10 to-[#00ff87]/10 border border-[#00a8ff]/20">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[#ffffff]/10 to-[#ffffff]/10 border border-[#ffffff]/20">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-[#00ff87] animate-pulse" />
+              <div className="w-3 h-3 rounded-full bg-[#ffffff] animate-pulse" />
               <span className="text-white font-semibold">Most businesses go live within 1-2 weeks</span>
             </div>
             <a
               href="/quote"
-              className="px-6 py-2 rounded-xl bg-[#00ff87] text-black font-bold hover:bg-[#00e077] transition-colors"
+              className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-[#e7e7ea] transition-colors"
             >
               Get Started Free
             </a>

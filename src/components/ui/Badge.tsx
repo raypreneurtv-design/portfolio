@@ -13,8 +13,8 @@ const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
 
     const variants = {
       default: 'bg-white/10 text-white/80 border border-white/10',
-      primary: 'bg-[#00a8ff]/20 text-[#00a8ff] border border-[#00a8ff]/30',
-      success: 'bg-[#00ff87]/20 text-[#00ff87] border border-[#00ff87]/30',
+      primary: 'bg-[#ffffff]/20 text-[#ffffff] border border-[#ffffff]/30',
+      success: 'bg-[#ffffff]/20 text-[#ffffff] border border-[#ffffff]/30',
       warning: 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30',
       outline: 'bg-transparent text-white border border-white/20',
     };
@@ -54,7 +54,7 @@ const TrustBadge = forwardRef<HTMLDivElement, TrustBadgeProps>(
         {...props}
       >
         {icon && (
-          <div className="w-8 h-8 rounded-lg bg-[#00a8ff]/20 flex items-center justify-center text-[#00a8ff]">
+          <div className="w-8 h-8 rounded-lg bg-[#ffffff]/20 flex items-center justify-center text-[#ffffff]">
             {icon}
           </div>
         )}

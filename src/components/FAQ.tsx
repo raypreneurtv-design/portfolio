@@ -23,16 +23,16 @@ function FAQItem({ faq, index, isOpen, onToggle }: {
                 onClick={onToggle}
                 className="w-full py-6 flex items-center justify-between text-left group"
             >
-                <span className="text-lg font-semibold text-white group-hover:text-[#00a8ff] transition-colors pr-8">
+                <span className="text-lg font-semibold text-white group-hover:text-[#ffffff] transition-colors pr-8">
                     {faq.question}
                 </span>
                 <motion.div
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.2 }}
-                    className="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#00a8ff]/20 transition-colors"
+                    className="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#ffffff]/20 transition-colors"
                 >
                     <svg
-                        className={`w-4 h-4 transition-colors ${isOpen ? "text-[#00a8ff]" : "text-white/60"}`}
+                        className={`w-4 h-4 transition-colors ${isOpen ? "text-[#ffffff]" : "text-white/60"}`}
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -68,7 +68,7 @@ export default function FAQ() {
 
     return (
         <section id="faq" className="py-32 relative bg-black">
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000810] to-black" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0b] to-black" />
 
             <div className="relative z-10 max-w-4xl mx-auto px-6" ref={ref}>
                 <motion.div
@@ -77,7 +77,7 @@ export default function FAQ() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         FAQ
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -127,7 +127,7 @@ export default function FAQ() {
                         </a>
                         <a
                             href="#contact"
-                            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00a8ff]/20 border border-[#00a8ff]/30 text-[#00a8ff] font-semibold hover:bg-[#00a8ff]/30 transition-all"
+                            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 text-[#ffffff] font-semibold hover:bg-[#ffffff]/30 transition-all"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round" />

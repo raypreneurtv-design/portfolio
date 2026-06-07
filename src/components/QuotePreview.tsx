@@ -21,9 +21,9 @@ export default function QuotePreview({
       transition={{ duration: 0.5 }}
       className="w-full max-w-lg mx-auto my-4"
     >
-      <div className="rounded-2xl border border-[#00a8ff]/30 bg-[#0a1628]/90 backdrop-blur-xl overflow-hidden">
+      <div className="rounded-2xl border border-[#ffffff]/30 bg-[#0a0a0b]/90 backdrop-blur-xl overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-[#00a8ff]/20 to-transparent px-6 py-4 border-b border-[#00a8ff]/20">
+        <div className="bg-gradient-to-r from-[#ffffff]/20 to-transparent px-6 py-4 border-b border-[#ffffff]/20">
           <h3 className="text-lg font-bold text-white">Your HVAC Estimate</h3>
           <p className="text-sm text-white/50">
             {quote.serviceType} &middot; {quote.systemType}
@@ -59,7 +59,7 @@ export default function QuotePreview({
                   {item.description}
                 </p>
               </div>
-              <span className="text-sm text-[#00a8ff] font-medium whitespace-nowrap">
+              <span className="text-sm text-[#ffffff] font-medium whitespace-nowrap">
                 {item.cost}
               </span>
             </div>
@@ -72,7 +72,7 @@ export default function QuotePreview({
             <span className="text-base font-bold text-white">
               Total Estimate
             </span>
-            <span className="text-xl font-black text-[#00a8ff]">
+            <span className="text-xl font-black text-[#ffffff]">
               {quote.totalRange}
             </span>
           </div>

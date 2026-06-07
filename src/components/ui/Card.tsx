@@ -16,8 +16,8 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     const variants = {
       default: 'bg-white/5 border border-white/10',
       glass: 'bg-white/5 backdrop-blur-xl border border-white/10',
-      gradient: 'bg-gradient-to-br from-[#00a8ff]/10 to-[#6366f1]/10 border border-[#00a8ff]/20',
-      interactive: 'bg-white/5 border border-white/10 hover:border-[#00a8ff]/40 hover:bg-[#00a8ff]/5',
+      gradient: 'bg-gradient-to-br from-[#ffffff]/10 to-[#6366f1]/10 border border-[#ffffff]/20',
+      interactive: 'bg-white/5 border border-white/10 hover:border-[#ffffff]/40 hover:bg-[#ffffff]/5',
     };
 
     const paddings = {
@@ -28,7 +28,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     };
 
     const hoverEffect = hoverable
-      ? 'hover:shadow-lg hover:shadow-[#00a8ff]/10 hover:-translate-y-1'
+      ? 'hover:shadow-lg hover:shadow-[#ffffff]/10 hover:-translate-y-1'
       : '';
 
     const MotionDiv = motion.div;

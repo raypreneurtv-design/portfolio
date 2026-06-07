@@ -20,11 +20,11 @@ export default function FinalCTA() {
   return (
     <section className="py-32 relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00a8ff]/20 via-[#000815] to-[#00ff87]/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#ffffff]/20 via-[#000815] to-[#ffffff]/10" />
 
       {/* Decorative elements */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#00a8ff] opacity-[0.1] blur-[150px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#00ff87] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.1] blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center" ref={ref}>
         <motion.div
@@ -102,11 +102,11 @@ export default function FinalCTA() {
             className="mt-12 text-white/40 text-sm"
           >
             Questions? Call us at{' '}
-            <a href="tel:+1234567890" className="text-[#00a8ff] hover:underline">
+            <a href="tel:+1234567890" className="text-[#ffffff] hover:underline">
               (123) 456-7890
             </a>{' '}
             or{' '}
-            <a href="mailto:hello@insightoperator.com" className="text-[#00a8ff] hover:underline">
+            <a href="mailto:hello@insightoperator.com" className="text-[#ffffff] hover:underline">
               hello@insightoperator.com
             </a>
           </motion.p>

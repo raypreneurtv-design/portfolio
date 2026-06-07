@@ -8,7 +8,7 @@ export const businessTypes: BusinessTypeInfo[] = [
     description: 'Heating, ventilation, and air conditioning services',
     commonServices: ['AC Repair', 'Furnace Installation', 'Duct Cleaning', 'Maintenance Plans'],
     avgTicketSize: '$150-$5,000',
-    color: '#00a8ff',
+    color: '#ffffff',
   },
   {
     id: 'plumbing',
@@ -17,7 +17,7 @@ export const businessTypes: BusinessTypeInfo[] = [
     description: 'Residential and commercial plumbing services',
     commonServices: ['Drain Cleaning', 'Water Heater', 'Pipe Repair', 'Emergency Service'],
     avgTicketSize: '$100-$3,000',
-    color: '#0077cc',
+    color: '#e7e7ea',
   },
   {
     id: 'roofing',
@@ -35,7 +35,7 @@ export const businessTypes: BusinessTypeInfo[] = [
     description: 'Lawn care and landscape design services',
     commonServices: ['Lawn Maintenance', 'Tree Service', 'Hardscaping', 'Irrigation'],
     avgTicketSize: '$50-$10,000',
-    color: '#00ff87',
+    color: '#ffffff',
   },
   {
     id: 'electrical',

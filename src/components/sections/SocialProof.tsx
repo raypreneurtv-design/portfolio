@@ -12,7 +12,7 @@ export default function SocialProof() {
 
   return (
     <section id="proof" className="py-32 relative bg-black">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#000810] to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0b] to-black" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6" ref={ref}>
         {/* Header */}
@@ -47,7 +47,7 @@ export default function SocialProof() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="text-center p-6 rounded-2xl bg-gradient-to-br from-[#00a8ff]/10 to-[#00ff87]/10 border border-[#00a8ff]/20"
+              className="text-center p-6 rounded-2xl bg-gradient-to-br from-[#ffffff]/10 to-[#ffffff]/10 border border-[#ffffff]/20"
             >
               <span className="text-4xl md:text-5xl font-bold text-white block mb-2">
                 {metric.value}
@@ -65,16 +65,16 @@ export default function SocialProof() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 + index * 0.15 }}
-              className="bg-gradient-to-br from-white/5 to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#00a8ff]/30 transition-all group"
+              className="bg-gradient-to-br from-white/5 to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#ffffff]/30 transition-all group"
             >
               {/* Icon */}
-              <div className="w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br from-[#ff4757]/20 to-[#ff6b81]/10 border border-[#ff4757]/20 flex items-center justify-center group-hover:from-[#00a8ff]/20 group-hover:to-[#00ff87]/10 group-hover:border-[#00a8ff]/20 transition-all">
+              <div className="w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br from-[#a1a1aa]/20 to-[#a1a1aa]/10 border border-[#a1a1aa]/20 flex items-center justify-center group-hover:from-[#ffffff]/20 group-hover:to-[#ffffff]/10 group-hover:border-[#ffffff]/20 transition-all">
                 <span className="text-2xl">{item.icon}</span>
               </div>
 
               {/* Problem */}
               <div className="mb-6">
-                <Badge variant="outline" size="sm" className="mb-3 bg-[#ff4757]/10 text-[#ff6b81] border-[#ff4757]/20">
+                <Badge variant="outline" size="sm" className="mb-3 bg-[#a1a1aa]/10 text-[#a1a1aa] border-[#a1a1aa]/20">
                   THE PROBLEM
                 </Badge>
                 <h3 className="text-xl font-bold text-white mb-2">{item.problem}</h3>
@@ -89,7 +89,7 @@ export default function SocialProof() {
                 <Badge variant="primary" size="sm" className="mb-3">
                   THE SOLUTION
                 </Badge>
-                <h4 className="text-lg font-semibold text-[#00ff87] mb-2">{item.solution}</h4>
+                <h4 className="text-lg font-semibold text-[#ffffff] mb-2">{item.solution}</h4>
                 <p className="text-white/60 text-sm leading-relaxed">{item.solutionDetail}</p>
               </div>
             </motion.div>

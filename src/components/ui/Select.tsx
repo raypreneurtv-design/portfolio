@@ -28,7 +28,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             className="block text-sm font-semibold text-white mb-2"
           >
             {label}
-            {props.required && <span className="text-red-400 ml-1">*</span>}
+            {props.required && <span className="text-zinc-400 ml-1">*</span>}
           </label>
         )}
         <div className="relative">
@@ -42,8 +42,8 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
               focus:outline-none focus:ring-2 focus:ring-offset-0
               ${
                 error
-                  ? 'border-red-400/50 focus:border-red-400 focus:ring-red-400/20'
-                  : 'border-white/10 focus:border-[#00a8ff]/50 focus:ring-[#00a8ff]/20'
+                  ? 'border-zinc-400/50 focus:border-zinc-400 focus:ring-zinc-400/20'
+                  : 'border-white/10 focus:border-[#ffffff]/50 focus:ring-[#ffffff]/20'
               }
               ${!props.value ? 'text-white/30' : ''}
               ${className}
@@ -70,7 +70,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
           </div>
         </div>
         {error && (
-          <p className="mt-1.5 text-sm text-red-400 flex items-center gap-1">
+          <p className="mt-1.5 text-sm text-zinc-400 flex items-center gap-1">
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="12" cy="12" r="10" />
               <line x1="12" y1="8" x2="12" y2="12" />

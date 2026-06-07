@@ -67,7 +67,7 @@ function ChatbotDemo() {
     return (
         <div className="bg-[#0a0a1a] rounded-2xl p-4 h-[320px] flex flex-col">
             <div className="flex items-center gap-2 pb-3 border-b border-white/10 mb-4">
-                <div className="w-3 h-3 rounded-full bg-[#00a8ff] animate-pulse" />
+                <div className="w-3 h-3 rounded-full bg-[#ffffff] animate-pulse" />
                 <span className="text-sm text-white/60">AI Assistant Online</span>
             </div>
             <div className="flex-1 overflow-hidden space-y-3">
@@ -79,7 +79,7 @@ function ChatbotDemo() {
                         className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                     >
                         <div className={`max-w-[80%] px-4 py-2 rounded-2xl text-sm ${msg.role === "user"
-                                ? "bg-[#00a8ff] text-white rounded-br-md"
+                                ? "bg-[#ffffff] text-white rounded-br-md"
                                 : "bg-white/10 text-white/90 rounded-bl-md"
                             }`}>
                             {msg.text}
@@ -129,7 +129,7 @@ function VoiceDemo() {
     return (
         <div className="bg-[#0a0a1a] rounded-2xl p-6 h-[320px] flex flex-col justify-center">
             <div className="text-center mb-6">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center">
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center">
                     <motion.div
                         animate={isPlaying ? { scale: [1, 1.2, 1] } : {}}
                         transition={{ repeat: Infinity, duration: 0.5 }}
@@ -149,7 +149,7 @@ function VoiceDemo() {
             <div className="space-y-4">
                 <div className="h-1 bg-white/10 rounded-full overflow-hidden">
                     <motion.div
-                        className="h-full bg-gradient-to-r from-[#00a8ff] to-[#6366f1]"
+                        className="h-full bg-gradient-to-r from-[#ffffff] to-[#6366f1]"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
@@ -196,13 +196,13 @@ function WorkflowDemo() {
                             <motion.div
                                 animate={{
                                     boxShadow: [
-                                        "0 0 0 0 rgba(0, 168, 255, 0)",
-                                        "0 0 0 10px rgba(0, 168, 255, 0.1)",
-                                        "0 0 0 0 rgba(0, 168, 255, 0)",
+                                        "0 0 0 0 rgba(255, 255, 255, 0)",
+                                        "0 0 0 10px rgba(255, 255, 255, 0.1)",
+                                        "0 0 0 0 rgba(255, 255, 255, 0)",
                                     ],
                                 }}
                                 transition={{ repeat: Infinity, duration: 2, delay: idx * 0.5 }}
-                                className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#00a8ff]/20 to-[#6366f1]/20 border border-[#00a8ff]/30 flex items-center justify-center"
+                                className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#ffffff]/20 to-[#6366f1]/20 border border-[#ffffff]/30 flex items-center justify-center"
                             >
                                 <span className="text-xs text-white/80 text-center leading-tight">{step}</span>
                             </motion.div>
@@ -211,7 +211,7 @@ function WorkflowDemo() {
                                     initial={{ scaleX: 0 }}
                                     animate={{ scaleX: 1 }}
                                     transition={{ delay: idx * 0.2 + 0.3, duration: 0.3 }}
-                                    className="absolute top-1/2 left-full w-8 h-0.5 bg-gradient-to-r from-[#00a8ff] to-[#6366f1] origin-left"
+                                    className="absolute top-1/2 left-full w-8 h-0.5 bg-gradient-to-r from-[#ffffff] to-[#6366f1] origin-left"
                                     style={{ transform: "translateY(-50%)" }}
                                 />
                             )}
@@ -264,7 +264,7 @@ export default function Demos() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#00a8ff] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffffff] text-white text-xs font-bold tracking-wide mb-6">
                         LIVE DEMOS
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -286,13 +286,13 @@ export default function Demos() {
                                 transition={{ delay: index * 0.1 }}
                                 onClick={() => setActiveDemo(demo.id)}
                                 className={`w-full text-left p-6 rounded-2xl transition-all duration-300 ${activeDemo === demo.id
-                                        ? "bg-gradient-to-r from-[#00a8ff]/20 to-[#6366f1]/20 border border-[#00a8ff]/40"
+                                        ? "bg-gradient-to-r from-[#ffffff]/20 to-[#6366f1]/20 border border-[#ffffff]/40"
                                         : "bg-white/5 border border-white/10 hover:border-white/20"
                                     }`}
                             >
                                 <div className="flex items-start gap-4">
                                     <div className={`p-3 rounded-xl transition-colors ${activeDemo === demo.id
-                                            ? "bg-[#00a8ff] text-white"
+                                            ? "bg-[#ffffff] text-white"
                                             : "bg-white/10 text-white/60"
                                         }`}>
                                         {demo.icon}
@@ -300,14 +300,14 @@ export default function Demos() {
                                     <div className="flex-1">
                                         <div className="flex items-center gap-2 mb-1">
                                             <h3 className="text-lg font-bold text-white">{demo.title}</h3>
-                                            <span className="px-2 py-0.5 rounded-full bg-[#00a8ff]/20 text-[#00a8ff] text-xs font-semibold">
+                                            <span className="px-2 py-0.5 rounded-full bg-[#ffffff]/20 text-[#ffffff] text-xs font-semibold">
                                                 {demo.subtitle}
                                             </span>
                                         </div>
                                         <p className="text-white/50 text-sm">{demo.description}</p>
                                     </div>
                                     <svg
-                                        className={`w-5 h-5 transition-transform ${activeDemo === demo.id ? "text-[#00a8ff] rotate-90" : "text-white/30"}`}
+                                        className={`w-5 h-5 transition-transform ${activeDemo === demo.id ? "text-[#ffffff] rotate-90" : "text-white/30"}`}
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -335,7 +335,7 @@ export default function Demos() {
                             href="#contact"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="mt-4 w-full py-4 rounded-xl bg-gradient-to-r from-[#00a8ff] to-[#6366f1] text-white font-bold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[#00a8ff]/20 transition-all"
+                            className="mt-4 w-full py-4 rounded-xl bg-gradient-to-r from-[#ffffff] to-[#6366f1] text-white font-bold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[#ffffff]/20 transition-all"
                         >
                             Get This For Your Business
                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -12,12 +12,12 @@ import {
 
 // Color scheme matching the website
 const colors = {
-    primary: '#00a8ff',
+    primary: '#ffffff',
     secondary: '#6366f1',
     accent: '#f59e0b',
     green: '#10b981',
     background: '#000000',
-    backgroundAlt: '#000810',
+    backgroundAlt: '#0a0a0b',
     text: '#ffffff',
     textMuted: 'rgba(255, 255, 255, 0.5)',
 };
@@ -643,7 +643,7 @@ const ResourcesScene: React.FC = () => {
             description: 'Complete guide to building your first AI workflow with templates',
             tag: 'FREE GUIDE',
             icon: '📚',
-            color: `linear-gradient(135deg, ${colors.primary}, #0077cc)`,
+            color: `linear-gradient(135deg, ${colors.primary}, #e7e7ea)`,
         },
         {
             title: 'n8n Workflow Templates',

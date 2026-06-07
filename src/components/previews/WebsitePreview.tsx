@@ -21,7 +21,7 @@ export function WebsitePreview({
       {/* Browser header */}
       <div className="flex items-center gap-2 px-4 py-3 bg-[#0d0d1a] border-b border-white/10">
         <div className="flex gap-1.5">
-          <div className="w-3 h-3 rounded-full bg-red-500" />
+          <div className="w-3 h-3 rounded-full bg-white" />
           <div className="w-3 h-3 rounded-full bg-yellow-500" />
           <div className="w-3 h-3 rounded-full bg-green-500" />
         </div>

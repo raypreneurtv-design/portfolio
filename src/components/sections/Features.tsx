@@ -53,16 +53,16 @@ function FeatureCard({ feature, index, isHovered, onHover, onLeave }: FeatureCar
       onMouseLeave={onLeave}
       className={`rounded-3xl p-8 transition-all duration-300 cursor-pointer h-full ${
         isHovered
-          ? 'bg-[#00a8ff] text-white'
+          ? 'bg-[#ffffff] text-white'
           : 'bg-white/5 border border-white/10 text-white'
       }`}
     >
       <div
         className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${
-          isHovered ? 'bg-white/20' : 'bg-[#00a8ff]/20'
+          isHovered ? 'bg-white/20' : 'bg-[#ffffff]/20'
         }`}
       >
-        <div className={isHovered ? 'text-white' : 'text-[#00a8ff]'}>
+        <div className={isHovered ? 'text-white' : 'text-[#ffffff]'}>
           {iconMap[feature.icon]}
         </div>
       </div>
@@ -78,11 +78,11 @@ function FeatureCard({ feature, index, isHovered, onHover, onLeave }: FeatureCar
           <li key={idx} className="flex items-center gap-3">
             <div
               className={`w-5 h-5 rounded-full flex items-center justify-center ${
-                isHovered ? 'bg-white/20' : 'bg-[#00a8ff]/20'
+                isHovered ? 'bg-white/20' : 'bg-[#ffffff]/20'
               }`}
             >
               <svg
-                className={`w-3 h-3 ${isHovered ? 'text-white' : 'text-[#00a8ff]'}`}
+                className={`w-3 h-3 ${isHovered ? 'text-white' : 'text-[#ffffff]'}`}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -101,7 +101,7 @@ function FeatureCard({ feature, index, isHovered, onHover, onLeave }: FeatureCar
       <a
         href={feature.ctaLink}
         className={`flex items-center gap-2 font-semibold ${
-          isHovered ? 'text-white' : 'text-[#00a8ff]'
+          isHovered ? 'text-white' : 'text-[#ffffff]'
         }`}
       >
         {feature.ctaText}
@@ -165,7 +165,7 @@ export default function Features() {
           <p className="text-white/50 mb-4">Not sure which tools you need?</p>
           <a
             href="/quote"
-            className="inline-flex items-center gap-2 text-[#00a8ff] font-semibold hover:underline"
+            className="inline-flex items-center gap-2 text-[#ffffff] font-semibold hover:underline"
           >
             Get a free recommendation based on your business
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -38,7 +38,7 @@ export default function Problem() {
                 >
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
                         Why Leads Get Missed <br />
-                        <span className="text-[#00a8ff]">And How We Fix It</span>
+                        <span className="text-[#ffffff]">And How We Fix It</span>
                     </h2>
                 </motion.div>
 
@@ -49,7 +49,7 @@ export default function Problem() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#00a8ff]/50 transition-colors"
+                            className="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-[#ffffff]/50 transition-colors"
                         >
                             <h3 className="text-xl font-bold text-white mb-4">{prob.title}</h3>
                             <p className="text-white/60">{prob.description}</p>

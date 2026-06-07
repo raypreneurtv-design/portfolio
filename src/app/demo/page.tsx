@@ -36,7 +36,7 @@ export default function DemoPage() {
 
       <section className="min-h-screen pt-32 pb-20 relative starry-night">
         {/* Background effects */}
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#00a8ff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#6366f1] opacity-[0.05] blur-[150px] rounded-full pointer-events-none" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -69,7 +69,7 @@ export default function DemoPage() {
                 onClick={() => setActiveDemo(demo.id as 'chat' | 'voice' | 'quote')}
                 className={`px-6 py-3 rounded-xl font-semibold transition-all ${
                   activeDemo === demo.id
-                    ? 'bg-[#00a8ff] text-white'
+                    ? 'bg-[#ffffff] text-white'
                     : 'bg-white/5 text-white/60 hover:bg-white/10'
                 }`}
               >
@@ -91,13 +91,13 @@ export default function DemoPage() {
               {activeDemo === 'chat' && (
                 <div>
                   <div className="flex items-center gap-3 mb-6 pb-4 border-b border-white/10">
-                    <div className="w-10 h-10 rounded-full bg-[#00a8ff] flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-[#ffffff] flex items-center justify-center">
                       <span className="text-lg">❄️</span>
                     </div>
                     <div>
                       <p className="text-white font-semibold">Johnson's HVAC</p>
                       <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-[#00ff87]" />
+                        <span className="w-2 h-2 rounded-full bg-[#ffffff]" />
                         <span className="text-white/50 text-sm">AI Assistant Online</span>
                       </div>
                     </div>
@@ -114,7 +114,7 @@ export default function DemoPage() {
                         <div
                           className={`max-w-[85%] px-4 py-3 rounded-2xl ${
                             msg.role === 'user'
-                              ? 'bg-[#00a8ff] text-white rounded-br-md'
+                              ? 'bg-[#ffffff] text-white rounded-br-md'
                               : 'bg-white/10 text-white/90 rounded-bl-md'
                           }`}
                         >
@@ -127,7 +127,7 @@ export default function DemoPage() {
                   {visibleMessages < chatMessages.length && (
                     <button
                       onClick={handleChatContinue}
-                      className="mt-4 w-full py-3 rounded-xl bg-[#00a8ff]/20 text-[#00a8ff] font-semibold hover:bg-[#00a8ff]/30 transition-colors"
+                      className="mt-4 w-full py-3 rounded-xl bg-[#ffffff]/20 text-[#ffffff] font-semibold hover:bg-[#ffffff]/30 transition-colors"
                     >
                       Continue Conversation →
                     </button>
@@ -137,7 +137,7 @@ export default function DemoPage() {
 
               {activeDemo === 'voice' && (
                 <div className="text-center py-8">
-                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center">
+                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center">
                     <motion.div
                       animate={isPlaying ? { scale: [1, 1.2, 1] } : {}}
                       transition={{ repeat: Infinity, duration: 0.5 }}
@@ -180,7 +180,7 @@ export default function DemoPage() {
                     </button>
 
                     <p className="text-white/40 text-sm">
-                      Or call our demo line: <span className="text-[#00a8ff]">(555) 123-DEMO</span>
+                      Or call our demo line: <span className="text-[#ffffff]">(555) 123-DEMO</span>
                     </p>
                   </div>
                 </div>
@@ -228,13 +228,13 @@ export default function DemoPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       className="text-center py-8"
                     >
-                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#00ff87]/20 flex items-center justify-center">
-                        <svg className="w-8 h-8 text-[#00ff87]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffffff]/20 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#ffffff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <h4 className="text-xl font-bold text-white mb-2">Your Quote is Ready!</h4>
-                      <p className="text-3xl font-black text-[#00ff87] mb-4">$89 - $249</p>
+                      <p className="text-3xl font-black text-[#ffffff] mb-4">$89 - $249</p>
                       <p className="text-white/60 text-sm mb-6">
                         Diagnostic fee: $89 (waived with repair)
                         <br />
@@ -251,7 +251,7 @@ export default function DemoPage() {
 
             {/* Right - Info */}
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-[#00a8ff]/10 to-[#6366f1]/10 rounded-2xl p-6 border border-[#00a8ff]/20">
+              <div className="bg-gradient-to-br from-[#ffffff]/10 to-[#6366f1]/10 rounded-2xl p-6 border border-[#ffffff]/20">
                 <h3 className="text-xl font-bold text-white mb-4">Why This Works</h3>
                 <ul className="space-y-3">
                   {[
@@ -262,8 +262,8 @@ export default function DemoPage() {
                     'Sounds natural, not robotic',
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-[#00ff87]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-3 h-3 text-[#00ff87]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                      <div className="w-5 h-5 rounded-full bg-[#ffffff]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-3 h-3 text-[#ffffff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                           <path d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
@@ -288,14 +288,14 @@ export default function DemoPage() {
               </div>
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                <div className="w-12 h-12 rounded-full bg-[#00a8ff]/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-[#00a8ff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="w-12 h-12 rounded-full bg-[#ffffff]/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#ffffff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
                   <p className="text-white font-semibold">Questions? Call us</p>
-                  <p className="text-[#00a8ff]">(555) 123-4567</p>
+                  <p className="text-[#ffffff]">(555) 123-4567</p>
                 </div>
               </div>
             </div>

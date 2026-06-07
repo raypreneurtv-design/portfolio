@@ -40,7 +40,7 @@ export function VideoPlayer({
     return (
       <div className={`relative aspect-video rounded-2xl overflow-hidden bg-[#0a0a1a] ${className}`}>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center mb-4">
+          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center mb-4">
             <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z" />
             </svg>
@@ -75,7 +75,7 @@ export function VideoPlayer({
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-20 h-20 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center shadow-2xl shadow-[#00a8ff]/30 group-hover:shadow-[#00a8ff]/50 transition-all"
+                className="w-20 h-20 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center shadow-2xl shadow-[#ffffff]/30 group-hover:shadow-[#ffffff]/50 transition-all"
               >
                 <svg className="w-8 h-8 text-white ml-1" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z" />
@@ -91,7 +91,7 @@ export function VideoPlayer({
         <>
           {!isLoaded && (
             <div className="absolute inset-0 flex items-center justify-center bg-[#0a0a1a]">
-              <div className="w-12 h-12 border-4 border-[#00a8ff] border-t-transparent rounded-full animate-spin" />
+              <div className="w-12 h-12 border-4 border-[#ffffff] border-t-transparent rounded-full animate-spin" />
             </div>
           )}
           <video

@@ -33,7 +33,7 @@ export default function Contact() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#001020] via-black to-black" />
 
             {/* Decorative elements */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#00a8ff] opacity-[0.05] blur-[120px] rounded-full" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#ffffff] opacity-[0.05] blur-[120px] rounded-full" />
             <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-[#6366f1] opacity-[0.03] blur-[100px] rounded-full" />
 
             <div className="relative z-10 max-w-6xl mx-auto px-6" ref={ref}>
@@ -43,7 +43,7 @@ export default function Contact() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-[#00a8ff] to-[#6366f1] text-white text-xs font-bold tracking-wide mb-6">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-[#ffffff] to-[#6366f1] text-white text-xs font-bold tracking-wide mb-6">
                         LET'S BUILD
                     </span>
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -74,8 +74,8 @@ export default function Contact() {
                                         transition={{ delay: 0.3 + index * 0.1 }}
                                         className="flex items-center gap-3"
                                     >
-                                        <div className="w-6 h-6 rounded-full bg-[#00a8ff]/20 flex items-center justify-center flex-shrink-0">
-                                            <svg className="w-4 h-4 text-[#00a8ff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                        <div className="w-6 h-6 rounded-full bg-[#ffffff]/20 flex items-center justify-center flex-shrink-0">
+                                            <svg className="w-4 h-4 text-[#ffffff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                                 <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -86,7 +86,7 @@ export default function Contact() {
                         </div>
 
                         {/* Community CTA */}
-                        <div className="bg-gradient-to-br from-[#00a8ff]/10 to-[#6366f1]/10 rounded-2xl p-6 border border-[#00a8ff]/20">
+                        <div className="bg-gradient-to-br from-[#ffffff]/10 to-[#6366f1]/10 rounded-2xl p-6 border border-[#ffffff]/20">
                             <h4 className="text-lg font-bold text-white mb-2">
                                 Not ready for a call?
                             </h4>
@@ -111,7 +111,7 @@ export default function Contact() {
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 transition-colors text-sm"
                                 >
-                                    <span className="w-5 h-5 rounded bg-[#00a8ff] text-white text-xs font-bold flex items-center justify-center">sk</span>
+                                    <span className="w-5 h-5 rounded bg-[#ffffff] text-white text-xs font-bold flex items-center justify-center">sk</span>
                                     Join Skool
                                 </a>
                             </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                     >
                         {submitted ? (
                             <div className="glass-dark rounded-3xl p-8 md:p-12 text-center">
-                                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#00a8ff] to-[#6366f1] flex items-center justify-center">
+                                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffffff] to-[#6366f1] flex items-center justify-center">
                                     <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                         <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
@@ -162,7 +162,7 @@ export default function Contact() {
                                             id="name"
                                             value={formState.name}
                                             onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                                            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 text-sm"
+                                            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#ffffff]/50 focus:outline-none focus:ring-2 focus:ring-[#ffffff]/20 transition-all text-white placeholder:text-white/30 text-sm"
                                             placeholder="Your name"
                                             required
                                         />
@@ -176,7 +176,7 @@ export default function Contact() {
                                             id="company"
                                             value={formState.company}
                                             onChange={(e) => setFormState({ ...formState, company: e.target.value })}
-                                            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 text-sm"
+                                            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#ffffff]/50 focus:outline-none focus:ring-2 focus:ring-[#ffffff]/20 transition-all text-white placeholder:text-white/30 text-sm"
                                             placeholder="Your company"
                                             required
                                         />
@@ -192,7 +192,7 @@ export default function Contact() {
                                         id="email"
                                         value={formState.email}
                                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 text-sm"
+                                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#ffffff]/50 focus:outline-none focus:ring-2 focus:ring-[#ffffff]/20 transition-all text-white placeholder:text-white/30 text-sm"
                                         placeholder="you@email.com"
                                         required
                                     />
@@ -207,7 +207,7 @@ export default function Contact() {
                                         value={formState.message}
                                         onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                                         rows={4}
-                                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#00a8ff]/50 focus:outline-none focus:ring-2 focus:ring-[#00a8ff]/20 transition-all text-white placeholder:text-white/30 resize-none text-sm"
+                                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-[#ffffff]/50 focus:outline-none focus:ring-2 focus:ring-[#ffffff]/20 transition-all text-white placeholder:text-white/30 resize-none text-sm"
                                         placeholder="Tell us about your business and what you'd like to automate..."
                                         required
                                     />
@@ -220,7 +220,7 @@ export default function Contact() {
                                         rel="noopener noreferrer"
                                         whileHover={{ scale: 1.02 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00a8ff] to-[#6366f1] text-white font-bold text-lg hover:shadow-lg hover:shadow-[#00a8ff]/20 transition-all text-center block"
+                                        className="w-full py-4 rounded-xl bg-gradient-to-r from-[#ffffff] to-[#6366f1] text-white font-bold text-lg hover:shadow-lg hover:shadow-[#ffffff]/20 transition-all text-center block"
                                     >
                                         Book Free Strategy Call
                                     </motion.a>

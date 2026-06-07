@@ -48,7 +48,7 @@ export default function AboutMe() {
             </Badge>
             <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
               Built By Someone Who&apos;s{' '}
-              <span className="font-bold text-[#00a8ff]">Actually Done It</span>
+              <span className="font-bold text-[#ffffff]">Actually Done It</span>
             </h2>
           </div>
 
@@ -64,10 +64,10 @@ export default function AboutMe() {
               <div className="flex justify-center lg:justify-start">
                 <div className="relative">
                   {/* Frame glow */}
-                  <div className="absolute -inset-4 bg-gradient-to-r from-[#00a8ff]/30 to-[#00ff87]/30 rounded-3xl blur-xl" />
+                  <div className="absolute -inset-4 bg-gradient-to-r from-[#ffffff]/30 to-[#ffffff]/30 rounded-3xl blur-xl" />
 
                   {/* Photo frame */}
-                  <div className="relative w-80 h-96 rounded-2xl border-4 border-[#00a8ff]/50 overflow-hidden bg-white/5 backdrop-blur-sm">
+                  <div className="relative w-80 h-96 rounded-2xl border-4 border-[#ffffff]/50 overflow-hidden bg-white/5 backdrop-blur-sm">
                     {/* Headshot image */}
                     <Image
                       src="/headshot.jpg"
@@ -78,10 +78,10 @@ export default function AboutMe() {
                     />
 
                     {/* Corner accents */}
-                    <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#00ff87]" />
-                    <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#00ff87]" />
-                    <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#00ff87]" />
-                    <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#00ff87]" />
+                    <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#ffffff]" />
+                    <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#ffffff]" />
+                    <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#ffffff]" />
+                    <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#ffffff]" />
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function AboutMe() {
                 transition={{ delay: 0.3 }}
                 className="text-2xl font-bold text-white mb-8 flex items-center gap-3"
               >
-                <span className="w-2 h-8 bg-[#00a8ff] rounded-full" />
+                <span className="w-2 h-8 bg-[#ffffff] rounded-full" />
                 Track Record
               </motion.h3>
 
@@ -135,12 +135,12 @@ export default function AboutMe() {
                     initial={{ opacity: 0, x: 40 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ delay: 0.4 + index * 0.15 }}
-                    className="relative pl-8 border-l-2 border-white/10 hover:border-[#00a8ff]/50 transition-colors"
+                    className="relative pl-8 border-l-2 border-white/10 hover:border-[#ffffff]/50 transition-colors"
                   >
                     {/* Timeline dot */}
-                    <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-[#00a8ff] border-4 border-black" />
+                    <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-[#ffffff] border-4 border-black" />
 
-                    <span className="inline-block px-3 py-1 rounded-full bg-[#00a8ff]/20 text-[#00a8ff] text-sm font-semibold mb-2">
+                    <span className="inline-block px-3 py-1 rounded-full bg-[#ffffff]/20 text-[#ffffff] text-sm font-semibold mb-2">
                       {item.year}
                     </span>
                     <h4 className="text-xl font-bold text-white mb-2">{item.title}</h4>

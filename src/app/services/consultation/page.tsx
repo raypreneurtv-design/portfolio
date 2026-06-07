@@ -9,10 +9,10 @@ export default function ConsultingPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#001020] via-black to-black" />
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#00a8ff] opacity-[0.08] blur-[150px] rounded-full" />
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#ffffff] opacity-[0.08] blur-[150px] rounded-full" />
 
                 <div className="relative z-10 max-w-5xl mx-auto px-6">
-                    <Link href="/" className="inline-flex items-center gap-2 text-[#00a8ff] mb-8 hover:underline">
+                    <Link href="/" className="inline-flex items-center gap-2 text-[#ffffff] mb-8 hover:underline">
                         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <path d="M19 12H5M12 19l-7-7 7-7" />
                         </svg>
@@ -28,7 +28,7 @@ export default function ConsultingPage() {
                         <h1 className="text-5xl md:text-6xl font-light mb-6">
                             AI Consulting
                         </h1>
-                        <p className="text-xl text-[#00a8ff] font-semibold mb-4">
+                        <p className="text-xl text-[#ffffff] font-semibold mb-4">
                             Strategic guidance and hands-on training
                         </p>
                         <p className="text-xl text-white/60 max-w-3xl leading-relaxed">
@@ -66,7 +66,7 @@ export default function ConsultingPage() {
                                 transition={{ delay: i * 0.1 }}
                                 className="p-6 rounded-2xl bg-white/5 border border-white/10"
                             >
-                                <h3 className="text-xl font-bold mb-2 text-[#00a8ff]">{feature.title}</h3>
+                                <h3 className="text-xl font-bold mb-2 text-[#ffffff]">{feature.title}</h3>
                                 <p className="text-white/60">{feature.desc}</p>
                             </motion.div>
                         ))}
@@ -81,7 +81,7 @@ export default function ConsultingPage() {
                     <p className="text-white/60 mb-8">Let's build your team's AI capability with expert consulting and training.</p>
                     <Link
                         href="/#contact"
-                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-[#00a8ff] text-white hover:bg-[#0077cc] transition-colors"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg bg-[#ffffff] text-white hover:bg-[#e7e7ea] transition-colors"
                     >
                         Get Started
                         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
