@@ -34,8 +34,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="io-sub"
         >
-          I set it up on your own hardware, wire it into how you already work, and train your
-          team to run it. Your data never leaves the building. Remote or on-site.
+          It&apos;s your private AI, on your own hardware, with your data staying put. If you
+          want help getting it set up and your team trained, that&apos;s where I come in.
+          Remote or on-site.
         </motion.p>
 
         <motion.div
