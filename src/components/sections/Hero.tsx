@@ -16,7 +16,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="io-eyebrow"
         >
-          AI systems for home-service businesses
+          Private, local AI for your business
         </motion.p>
 
         <motion.h1
@@ -25,7 +25,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="io-h1"
         >
-          Turn missed calls into booked jobs
+          Private AI, installed and trained, living in your own systems
         </motion.h1>
 
         <motion.p
@@ -34,8 +34,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="io-sub"
         >
-          An AI receptionist that answers every call, qualifies the lead, and books the job,
-          24/7, so you never lose work to a missed call again.
+          I set it up on your own hardware, wire it into how you already work, and train your
+          team to run it. Your data never leaves the building. Remote or on-site.
         </motion.p>
 
         <motion.div
@@ -44,8 +44,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.18 }}
           className="io-cta-row"
         >
-          <a href="/quote" className="io-btn io-btn-primary">Get an instant quote</a>
-          <a href="/demo" className="io-btn io-btn-secondary">See a live demo</a>
+          <a href="mailto:hello@insightoperator.com" className="io-btn io-btn-primary">Book a call</a>
+          <a href="/#features" className="io-btn io-btn-secondary">See what I build</a>
         </motion.div>
       </div>
 
