@@ -7,10 +7,10 @@ import { Button } from '@/components/ui/Button';
 import { TrustBadge } from '@/components/ui/Badge';
 
 const trustBadges = [
-  { text: 'No Setup Fees', icon: '💰' },
-  { text: 'Cancel Anytime', icon: '🔓' },
-  { text: '30-Day Guarantee', icon: '✓' },
-  { text: 'Free Support', icon: '🛟' },
+  { text: 'Your data stays yours', icon: '🔒' },
+  { text: 'Remote or on-site', icon: '📍' },
+  { text: 'No cloud lock-in', icon: '🔓' },
+  { text: 'Free scoping call', icon: '📞' },
 ];
 
 export default function FinalCTA() {
@@ -33,12 +33,12 @@ export default function FinalCTA() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
-            Stop losing jobs to{' '}
-            <span className="font-bold">missed calls</span>.
+            Own your AI.{' '}
+            <span className="font-bold">Don&apos;t rent it</span>.
           </h2>
 
           <p className="text-xl text-white/60 mb-10 max-w-2xl mx-auto">
-            Put an AI receptionist on your phones that answers every call, qualifies the lead, and books the job, around the clock.
+            Private AI set up on your own systems, your team trained to run it, and the automations that handle the busywork. Remote or on-site.
           </p>
 
           {/* CTAs */}
@@ -57,9 +57,9 @@ export default function FinalCTA() {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               }
-              onClick={() => window.location.href = '/quote'}
+              onClick={() => window.location.href = 'mailto:hello@insightoperator.com'}
             >
-              Get Your Free Quote
+              Book a call
             </Button>
             <Button
               variant="secondary"
@@ -70,9 +70,9 @@ export default function FinalCTA() {
                   <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               }
-              onClick={() => window.location.href = '/demo'}
+              onClick={() => window.location.href = '/#features'}
             >
-              Try AI Demo
+              See what I build
             </Button>
           </motion.div>
 

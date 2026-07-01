@@ -14,8 +14,8 @@ const painPoints = [
         <path d="M16 3l4 4m0-4l-4 4" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Missed calls and messages',
-    description: 'When you\'re on a job or after hours, leads slip through the cracks.',
+    title: 'You\'re renting your AI',
+    description: 'Monthly fees for tools you don\'t own, on a provider that can change the price or the rules anytime.',
   },
   {
     icon: (
@@ -24,8 +24,8 @@ const painPoints = [
         <path d="M12 6v6l4 2" />
       </svg>
     ),
-    title: 'Slow follow-ups',
-    description: 'Ready-to-book customers move on to competitors who respond faster.',
+    title: 'Your data leaves the building',
+    description: 'Every prompt and file gets sent to someone else\'s servers. For a lot of businesses that is a real problem.',
   },
   {
     icon: (
@@ -34,8 +34,8 @@ const painPoints = [
         <path d="M9 14l2 2 4-4" />
       </svg>
     ),
-    title: 'Manual quoting and scheduling',
-    description: 'Wastes time and kills momentum when customers are ready to commit.',
+    title: 'Your team doesn\'t use it',
+    description: 'You pay for seats nobody logs into, because no one showed the team how the tools fit the actual work.',
   },
   {
     icon: (
@@ -43,17 +43,17 @@ const painPoints = [
         <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
-    title: 'Too much admin work',
-    description: 'Pulling you out of the field and away from revenue-generating work.',
+    title: 'It\'s not wired into your work',
+    description: 'Generic AI that doesn\'t know your business, your files, or your process, so it stays a toy instead of a tool.',
   },
 ];
 
 const steps = [
   {
     num: '01',
-    title: 'Choose Your Tools',
+    title: 'Audit what to use and buy',
     description:
-      'Tell us about your business and which tools you need—instant quotes, AI receptionist, chat widget, or all three.',
+      'We look at your work, your data, and your hardware, then decide what to run and what to buy. No overbuying.',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -62,9 +62,9 @@ const steps = [
   },
   {
     num: '02',
-    title: 'We Build & Integrate',
+    title: 'Install it on your systems',
     description:
-      'Our team customizes everything for your services, pricing, and brand. We handle the tech—you focus on your business.',
+      'I set the AI up on your own machines, wire it into your tools and files, and lock your data down so it stays yours.',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -74,9 +74,9 @@ const steps = [
   },
   {
     num: '03',
-    title: 'Start Converting Leads',
+    title: 'Train your team to run it',
     description:
-      'Go live and watch leads roll in. Get real-time notifications, detailed analytics, and ongoing optimization support.',
+      'Plain-language training so your team actually uses it, plus the automations that handle the busywork. On-site available.',
     icon: (
       <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -105,11 +105,11 @@ export default function HowItWorks() {
             THE PROBLEM
           </Badge>
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
-            Why Leads Get Missed{' '}
-            <span className="font-bold">And How We Fix It</span>
+            Why most business AI{' '}
+            <span className="font-bold">quietly goes to waste</span>
           </h2>
           <p className="text-xl text-white/50 max-w-2xl mx-auto">
-            Direct, neutral, flows naturally after the VSL
+            Usually it isn&apos;t the AI. It&apos;s that it&apos;s rented, generic, and nobody set it up around your actual work.
           </p>
         </motion.div>
 
@@ -224,13 +224,13 @@ export default function HowItWorks() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[#ffffff]/10 to-[#ffffff]/10 border border-[#ffffff]/20">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-white/10 animate-pulse" />
-              <span className="text-white font-semibold">Most businesses go live within 1-2 weeks</span>
+              <span className="text-white font-semibold">Most setups are live within 1-2 weeks</span>
             </div>
             <a
-              href="/quote"
+              href="mailto:hello@insightoperator.com"
               className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-white/15 transition-colors"
             >
-              Get Started Free
+              Book a call
             </a>
           </div>
         </motion.div>
