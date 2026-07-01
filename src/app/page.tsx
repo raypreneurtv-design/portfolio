@@ -5,8 +5,6 @@ import {
   Hero,
   Features,
   HowItWorks,
-  AboutMe,
-  BusinessPreview,
   SocialProof,
   FinalCTA,
 } from "@/components/sections";
@@ -18,8 +16,6 @@ export default function Home() {
       <Hero />
       <HowItWorks />
       <Features />
-      <AboutMe />
-      <BusinessPreview />
       <SocialProof />
       <FAQ />
       <FinalCTA />
