@@ -32,6 +32,20 @@ const iconMap: Record<string, React.ReactNode> = {
       <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
+  server: (
+    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <rect x="3" y="4" width="18" height="7" rx="2" />
+      <rect x="3" y="13" width="18" height="7" rx="2" />
+      <line x1="7" y1="7.5" x2="7.01" y2="7.5" strokeLinecap="round" />
+      <line x1="7" y1="16.5" x2="7.01" y2="16.5" strokeLinecap="round" />
+    </svg>
+  ),
+  cap: (
+    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <path d="M22 10L12 5 2 10l10 5 10-5z" strokeLinejoin="round" />
+      <path d="M6 12v5c0 1 2.5 2.5 6 2.5s6-1.5 6-2.5v-5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
 };
 
 interface FeatureCardProps {
@@ -133,11 +147,11 @@ export default function Features() {
             FEATURES
           </Badge>
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
-            Everything You Need to{' '}
-            <span className="font-bold">Capture More Leads</span>
+            Three ways I put private AI{' '}
+            <span className="font-bold">to work for you</span>
           </h2>
           <p className="text-xl text-white/50 max-w-2xl mx-auto">
-            Powerful AI tools designed specifically for home service businesses. No tech skills required.
+            AI on your own systems, the training to run it, and the automations that handle the busywork. No cloud lock-in.
           </p>
         </motion.div>
 
@@ -162,12 +176,12 @@ export default function Features() {
           transition={{ delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <p className="text-white/50 mb-4">Not sure which tools you need?</p>
+          <p className="text-white/50 mb-4">Not sure what your business needs?</p>
           <a
-            href="/quote"
+            href="https://cal.com/ray-ndaula/30min"
             className="inline-flex items-center gap-2 text-[#ffffff] font-semibold hover:underline"
           >
-            Get a free recommendation based on your business
+            Book a call and I&apos;ll scope it with you
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
