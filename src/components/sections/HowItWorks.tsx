@@ -228,7 +228,7 @@ export default function HowItWorks() {
             </div>
             <a
               href="mailto:hello@insightoperator.com"
-              className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-white/15 transition-colors"
+              className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-white/90 transition-colors"
             >
               Book a call
             </a>

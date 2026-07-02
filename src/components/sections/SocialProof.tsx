@@ -23,13 +23,14 @@ export default function SocialProof() {
           className="text-center mb-16"
         >
           <Badge variant="primary" size="lg" className="mb-6">
-            PROBLEM & SOLUTION
+            WHY OWN IT
           </Badge>
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
-            Built for <span className="font-bold">Home Service Pros</span>
+            Built for businesses that want to{' '}
+            <span className="font-bold">own their AI</span>
           </h2>
           <p className="text-xl text-white/50 max-w-2xl mx-auto">
-            We solve the biggest challenges keeping you from growing your business.
+            The three problems I keep seeing, and what owning the stack fixes.
           </p>
         </motion.div>
 

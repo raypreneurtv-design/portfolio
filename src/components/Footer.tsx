@@ -4,21 +4,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const footerLinks = [
-    { name: "Features", href: "/#features" },
     { name: "How It Works", href: "/#how-it-works" },
-    { name: "Results", href: "/#proof" },
+    { name: "What I Build", href: "/#features" },
+    { name: "Why Own It", href: "/#proof" },
     { name: "FAQ", href: "/#faq" },
-    { name: "Get Quote", href: "/quote" },
-    { name: "AI Demo", href: "/demo" },
+    { name: "Book a Call", href: "mailto:hello@insightoperator.com" },
 ];
 
-const businessTypeLinks = [
-    { name: "HVAC", href: "/preview/hvac" },
-    { name: "Plumbing", href: "/preview/plumbing" },
-    { name: "Roofing", href: "/preview/roofing" },
-    { name: "Landscaping", href: "/preview/landscaping" },
-    { name: "Electrical", href: "/preview/electrical" },
-    { name: "Cleaning", href: "/preview/cleaning" },
+const serviceLinks = [
+    { name: "Private AI Setup", href: "/#features" },
+    { name: "Hardware & Tool Audits", href: "/#how-it-works" },
+    { name: "Team Training", href: "/#features" },
+    { name: "On-Site Installs", href: "/#faq" },
+    { name: "AI Receptionist", href: "/#features" },
+    { name: "n8n Automations", href: "/#features" },
 ];
 
 export default function Footer() {
@@ -52,7 +51,7 @@ export default function Footer() {
                             </div>
                         </motion.div>
                         <p className="text-white/40 text-sm mb-4 max-w-xs">
-                            AI-powered lead generation tools built for home service businesses. Instant quotes, 24/7 receptionist, smart chat.
+                            Private, local AI for your business. Installed on your own systems, your team trained to run it, your data staying yours.
                         </p>
                         <p className="text-xs text-white/20">
                             Building AI since Feb 2024
@@ -77,9 +76,9 @@ export default function Footer() {
 
                     {/* Industries */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">Industries We Serve</h4>
+                        <h4 className="text-white font-semibold mb-4">What I Do</h4>
                         <nav className="grid grid-cols-2 gap-2 mb-4">
-                            {businessTypeLinks.map((link) => (
+                            {serviceLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
@@ -105,19 +104,9 @@ export default function Footer() {
                                 href="https://www.skool.com/trendwheel-automations-5905"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 hover:bg-white/10/30 transition-all"
+                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 hover:bg-white/30 transition-all"
                             >
                                 <span className="text-[#ffffff] text-sm font-bold">sk</span>
-                            </a>
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#bc1888] border border-white/10 hover:opacity-80 transition-all"
-                            >
-                                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                                </svg>
                             </a>
                         </div>
                     </div>

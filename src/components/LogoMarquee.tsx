@@ -6,14 +6,14 @@ import type { SyntheticEvent } from 'react';
 // Each logo tries: local /public/logos/<slug>.svg  ->  Simple Icons CDN  ->  plain text.
 // To use your own/real logos, drop monochrome SVGs in /public/logos (e.g. openai.svg, twilio.svg, retell.svg).
 const items: { name: string; slug: string }[] = [
-  { name: 'Retell AI', slug: 'retell' },
+  { name: 'Ollama', slug: 'ollama' },
+  { name: 'Llama', slug: 'meta' },
+  { name: 'Mistral', slug: 'mistralai' },
+  { name: 'Docker', slug: 'docker' },
   { name: 'n8n', slug: 'n8n' },
-  { name: 'Twilio', slug: 'twilio' },
-  { name: 'Google Calendar', slug: 'googlecalendar' },
-  { name: 'cal.com', slug: 'caldotcom' },
   { name: 'Anthropic', slug: 'anthropic' },
   { name: 'OpenAI', slug: 'openai' },
-  { name: 'Vercel', slug: 'vercel' },
+  { name: 'Twilio', slug: 'twilio' },
 ];
 
 function handleError(e: SyntheticEvent<HTMLImageElement>, slug: string) {

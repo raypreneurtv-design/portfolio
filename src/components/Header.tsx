@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const navLinks = [
-    { name: "Features", href: "/#features" },
     { name: "How It Works", href: "/#how-it-works" },
-    { name: "Results", href: "/#proof" },
+    { name: "What I Build", href: "/#features" },
+    { name: "Why Own It", href: "/#proof" },
     { name: "FAQ", href: "/#faq" },
 ];
 
@@ -57,10 +57,10 @@ export default function Header() {
                         </a>
                     ))}
                     <a
-                        href="/quote"
+                        href="mailto:hello@insightoperator.com"
                         className="px-5 py-2 rounded-lg text-sm font-semibold bg-white text-black hover:bg-white/90 transition-colors"
                     >
-                        Get a quote
+                        Book a call
                     </a>
                 </nav>
 

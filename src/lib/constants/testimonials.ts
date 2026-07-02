@@ -8,31 +8,31 @@ export interface ProblemSolution {
 
 export const problemSolutions: ProblemSolution[] = [
   {
-    icon: '📵',
-    problem: "The 'Missed Calls' Problem",
-    problemDetail: "62% of small business calls go unanswered. Every missed call is a missed opportunity — and your competitors are just a Google search away.",
-    solution: "24/7 AI Receptionist",
-    solutionDetail: "Never miss another lead. Our AI answers every call, qualifies prospects, and captures their info — even at 2 AM on a Sunday.",
+    icon: '🔒',
+    problem: "The 'Whose data is it?' problem",
+    problemDetail: "Every prompt, file, and customer record you feed a cloud AI gets processed on someone else's servers, under someone else's terms. For a lot of businesses that is a dealbreaker they haven't priced in yet.",
+    solution: "AI inside your own walls",
+    solutionDetail: "I install open models on hardware you own. Your files, your customers, your numbers never leave the building. You can unplug the internet and it still works.",
   },
   {
-    icon: '⏳',
-    problem: "The 'Slow Quote' Problem",
-    problemDetail: "Speed to lead is everything. 78% of customers go with the first business to respond. If you're slow, you lose.",
-    solution: "Instant AI-Powered Quoting",
-    solutionDetail: "Deliver accurate estimates in seconds, not hours. Customers get pricing immediately while their intent is hot — no waiting, no friction.",
+    icon: '💸',
+    problem: "The 'Renting forever' problem",
+    problemDetail: "Per-seat subscriptions stack up fast, and the provider can raise prices, change limits, or retire the model you built your workflow on. You keep paying and you still own nothing.",
+    solution: "Own the stack instead",
+    solutionDetail: "One setup on your own machines instead of a forever bill. I spec what to run and what to buy, honestly, including when a cloud tool is still the right call for a specific job.",
   },
   {
-    icon: '😩',
-    problem: "The 'Admin Fatigue' Problem",
-    problemDetail: "You didn't start a business to be stuck behind a desk. But scheduling, follow-ups, and paperwork eat up your day.",
-    solution: "Automated Appointment Booking",
-    solutionDetail: "Let AI handle the back-and-forth. Appointments get booked, reminders get sent, and you stay focused on the work that pays.",
+    icon: '🧰',
+    problem: "The 'Nobody uses it' problem",
+    problemDetail: "Most business AI fails at adoption, not capability. Tools get bought, the team never gets trained, and six months later it is shelf-ware with a monthly invoice.",
+    solution: "Training plus automations",
+    solutionDetail: "I train your team in plain language around your actual work, then wire in the automations that run without them: AI receptionist, speed-to-lead follow-up, lead routing, custom n8n pipelines.",
   },
 ];
 
 export const metrics = [
-  { value: "24/7", label: "Always answering" },
-  { value: "<60s", label: "To an instant quote" },
-  { value: "7 days", label: "From signup to live" },
-  { value: "0", label: "Calls missed" },
+  { value: '100%', label: 'Of your data stays in-house' },
+  { value: '$0', label: 'Per-seat cloud AI fees' },
+  { value: '1-2 wks', label: 'From call to live setup' },
+  { value: 'Yours', label: 'The hardware, the models, the stack' },
 ];
