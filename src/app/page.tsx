@@ -4,6 +4,7 @@ import FAQ from "@/components/FAQ";
 import {
   Hero,
   Features,
+  CaseStudies,
   HowItWorks,
   SocialProof,
   FinalCTA,
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <HowItWorks />
       <Features />
+      <CaseStudies />
       <SocialProof />
       <FAQ />
       <FinalCTA />
