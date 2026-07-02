@@ -1,5 +1,6 @@
 export { default as Hero } from './Hero';
 export { default as Features } from './Features';
+export { default as CaseStudies } from './CaseStudies';
 export { default as HowItWorks } from './HowItWorks';
 export { default as AboutMe } from './AboutMe';
 export { default as BusinessPreview } from './BusinessPreview';
