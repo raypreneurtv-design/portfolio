@@ -57,7 +57,7 @@ export default function FinalCTA() {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               }
-              onClick={() => window.location.href = 'mailto:hello@insightoperator.com'}
+              onClick={() => window.location.href = 'https://cal.com/ray-ndaula/30min'}
             >
               Book a call
             </Button>
@@ -102,13 +102,13 @@ export default function FinalCTA() {
             transition={{ delay: 0.6 }}
             className="mt-12 text-white/40 text-sm"
           >
-            Questions? Call us at{' '}
-            <a href="tel:+1234567890" className="text-[#ffffff] hover:underline">
-              (123) 456-7890
-            </a>{' '}
-            or{' '}
+            Questions? Email{' '}
             <a href="mailto:hello@insightoperator.com" className="text-[#ffffff] hover:underline">
               hello@insightoperator.com
+            </a>{' '}
+            or{' '}
+            <a href="https://cal.com/ray-ndaula/30min" className="text-[#ffffff] hover:underline">
+              grab a time that works
             </a>
           </motion.p>
         </motion.div>

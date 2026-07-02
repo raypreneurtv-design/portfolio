@@ -57,7 +57,7 @@ export default function Header() {
                         </a>
                     ))}
                     <a
-                        href="mailto:hello@insightoperator.com"
+                        href="https://cal.com/ray-ndaula/30min"
                         className="px-5 py-2 rounded-lg text-sm font-semibold bg-white text-black hover:bg-white/90 transition-colors"
                     >
                         Book a call

@@ -8,7 +8,7 @@ const footerLinks = [
     { name: "What I Build", href: "/#features" },
     { name: "Why Own It", href: "/#proof" },
     { name: "FAQ", href: "/#faq" },
-    { name: "Book a Call", href: "mailto:hello@insightoperator.com" },
+    { name: "Book a Call", href: "https://cal.com/ray-ndaula/30min" },
 ];
 
 const serviceLinks = [

@@ -227,7 +227,7 @@ export default function HowItWorks() {
               <span className="text-white font-semibold">Most setups are live within 1-2 weeks</span>
             </div>
             <a
-              href="mailto:hello@insightoperator.com"
+              href="https://cal.com/ray-ndaula/30min"
               className="px-6 py-2 rounded-xl bg-[#ffffff] text-black font-bold hover:bg-white/90 transition-colors"
             >
               Book a call

@@ -178,7 +178,7 @@ export default function Features() {
         >
           <p className="text-white/50 mb-4">Not sure what your business needs?</p>
           <a
-            href="mailto:hello@insightoperator.com"
+            href="https://cal.com/ray-ndaula/30min"
             className="inline-flex items-center gap-2 text-[#ffffff] font-semibold hover:underline"
           >
             Book a call and I&apos;ll scope it with you

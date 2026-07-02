@@ -126,7 +126,7 @@ export default function FAQ() {
                             Ask in Discord
                         </a>
                         <a
-                            href="mailto:hello@insightoperator.com"
+                            href="https://cal.com/ray-ndaula/30min"
                             className="flex items-center gap-2 px-6 py-3 rounded-xl bg-[#ffffff]/20 border border-[#ffffff]/30 text-[#ffffff] font-semibold hover:bg-white/30 transition-all"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

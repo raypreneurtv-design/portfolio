@@ -13,7 +13,7 @@ export const features: Feature[] = [
       'Connected to your existing tools',
     ],
     ctaText: 'Book a call',
-    ctaLink: 'mailto:hello@insightoperator.com',
+    ctaLink: 'https://cal.com/ray-ndaula/30min',
   },
   {
     id: 'team-training',
@@ -27,7 +27,7 @@ export const features: Feature[] = [
       'Ongoing support',
     ],
     ctaText: 'Book a call',
-    ctaLink: 'mailto:hello@insightoperator.com',
+    ctaLink: 'https://cal.com/ray-ndaula/30min',
   },
   {
     id: 'automations',

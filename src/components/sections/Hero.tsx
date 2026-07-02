@@ -45,7 +45,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.18 }}
           className="io-cta-row"
         >
-          <a href="mailto:hello@insightoperator.com" className="io-btn io-btn-primary">Book a call</a>
+          <a href="https://cal.com/ray-ndaula/30min" className="io-btn io-btn-primary">Book a call</a>
           <a href="/#features" className="io-btn io-btn-secondary">See what I build</a>
         </motion.div>
       </div>
